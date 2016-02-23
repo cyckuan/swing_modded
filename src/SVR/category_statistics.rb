@@ -177,10 +177,10 @@ def json_build_category_statistics train_dir, xml_file, which_set, use_clean_dat
     $g_xml = xml_file
     $g_topics = Dir.glob($g_docs_dir+'/*/*-'+which_set).sort #change cluster to B
     
-
     $g_topics.each do |l_topic|
         str = use_clean_data ? `ruby Input/ProcessCleanDocs.rb -s #{l_topic} -x #{$g_xml}` :
             `ruby Input/ProcessTACTestDocs.rb -s #{l_topic} -x #{$g_xml} | ruby Input/SentenceSplitter.rb`
+        # STDERR.puts str
         l_JSON = JSON.parse str
         category = l_JSON['corpus'][0]["category"]
         topic_id = l_JSON['corpus'][0]["docset"].slice 0..-3

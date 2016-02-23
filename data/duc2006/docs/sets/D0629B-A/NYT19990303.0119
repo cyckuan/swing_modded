@@ -1,0 +1,119 @@
+
+<DOC>
+<DOCNO> NYT19990303.0119 </DOCNO>
+<DOCTYPE> NEWS STORY </DOCTYPE>
+<DATE_TIME> 1999-03-03 11:52 </DATE_TIME>
+<HEADER>
+A5877 &Cx1f; tad-z
+u a &Cx13;  &Cx11;  BC-CPT-TECHTOOLS02-COX &LR;      03-03 0606
+</HEADER>
+<BODY>
+<SLUG> BC-CPT-TECHTOOLS02-COX </SLUG>
+  
+ (Repeating as part of a weekly roundup of computer features)  
+Let software do its job in helping you do yours 
+By Jack Warner  
+c. 1999 Cox News Service  
+<TEXT>
+<P>
+   When last we talked, my computer was beset by the Happy99
+virus/worm, which was being passed back and forth on one of my
+mailing lists like a cold in a grade school class.
+</P>
+<P>
+   If you just tuned in, and don't spend much time on the Internet,
+Happy99 is a relatively benign virus in that it doesn't destroy
+anything. It mainly wriggles into your Internet software and joins
+every message you send as an attachment. You, however, are unware
+of this until you begin getting angry messages from your e-mail
+recipients.
+</P>
+<P>
+   Like any virus, it is an executable program, and isn't supposed
+to work at all unless you execute it. To the best of my knowledge,
+I never did that, but the thing suddenly turned into a kind of hand
+grenade; every time it came wafting into my computer by way of
+e-mail, as soon as it was downloaded, it caused the computer to
+seize up.
+</P>
+<P>
+   Nor could I erase it by any normal means; only Norton AntiVirus
+was able to get rid of it. And I had to use a painfully slow
+Web-based mail program to get into my mailbox and throw it out.
+Eventually, it dawned on me that Norton ought to be able to catch
+the thing creeping into my system and stomp on it right there.
+</P>
+<P>
+   So, going into the Norton configuration program, I changed a
+couple of settings.
+</P>
+<P>
+   Instead of telling it to alert me when it found a virus, it was
+ordered to delete the thing on sight. And instead of examining only
+.EXE files, it was told to examine everything.
+</P>
+<P>
+   I'm not sure which of these changes did the trick _ maybe both
+were required _ but upon downloading a group of messages which I
+knew contained the virus somewhere, everything went fine. No
+lockup. Upon examining the messages, the Happy99.exe attachment
+brought in by one of them was covered with a bright red X.
+</P>
+<P>
+   I relate this mainly as a lesson in trying to make a program do
+something you think it ought to be able to do. It doesn't always
+work, but nowadays programs are so flexible and have so many
+user-changeable parameters, it's always worth trying.
+</P>
+<P>
+   Another example is my recent test drive of Explorer. It wasn't
+presenting pictures and other images at Web sites I knew had
+graphics. A quick check showed it was set to refuse graphics to
+speed up operations. This, however archaic, was apparently the
+default setting.
+</P>
+<P>
+   If incidentally, you have executed the Happy99 virus, it's not
+hard to get rid of. There are lots of places on the Web with
+instructions, among them http://www.geocities.com
+</P>
+<P>
+   /SiliconValley/Heights/3652
+</P>
+<P>
+   /SKA.HTM.
+</P>
+<P>
+   During all the unHappy furor, I installed the latest upgrade to
+Eudora Pro, the outstanding e-mail program published by Qualcomm. I
+had been using Version 3.0; the latest is 4.1. It's a very
+worthwhile upgrade. The program hasn't changed drastically, but
+lots of things work better. The main screen is divided into two
+windows now. The top window shows a list of your mail, and merely
+by bringing the cursor to any message, the text appears instantly
+in the lower window. No more tiresome double-clicking, and the
+presentation is much faster.
+</P>
+<P>
+   Additionally, Eudora now makes the mail available in batches. If
+you have 200 messages waiting, it gives them to you 20 or so at a
+time so you don't have to wait for the entire mailbox to download
+so you can begin reading. I have yet to see a mail program I like
+as well.
+</P>
+<P>
+   Story Filed By Cox Newspapers
+</P>
+<P>
+   For Use By Clients of the New York Times News Service
+</P>
+<P>
+   &QL; 
+NYT-03-01-99 1110EST &QL;
+</P>
+</TEXT>
+</BODY>
+<TRAILER>
+NYT-03-03-99 1152EST &QL; 
+</TRAILER>
+</DOC>

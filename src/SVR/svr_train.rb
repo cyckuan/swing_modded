@@ -56,6 +56,7 @@ def print_instances(dir, model_dir, to_file, which_set,xml_file)
         | ruby Features/dfs_bigram.rb \
         | ruby Features/sentenceposition.rb \
         | ruby Features/sentencelength.rb \
+        | ruby Features/sentencespecificity.rb \
         | ruby Features/gfs.rb -s #{stat_file} \
         | ruby Features/ckld_d.rb -s #{stat_file} \
         | ruby SVR/importance.rb -m #{model_dir}`

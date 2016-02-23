@@ -24,7 +24,8 @@ if __FILE__ == $0 then
         puts "usage: #{__FILE__} -s tac_doc directory -x topic_xml"
         exit
     end
-    
+
+
     ## Extract Category Information 
     topic_id= File.basename(src_dir).slice 0..-3
     topic_doc = REXML::Document.new(File.new(topic_xml))
@@ -48,30 +49,41 @@ if __FILE__ == $0 then
             doc_type = doc.attributes['type']
             #e = document.get_elements('/DOC/HEADLINE')[0]
             #headline = e != nil ? e.text.strip : ''
-            headline = document.get_elements('/DOC/HEADLINE/s').map {|a| a.text.strip} .join(" ")
+            headline = document.get_elements('/DOC/HEADLINE').map {|a| a.text.strip} .join(" ")
             e = document.get_elements('/DOC/DATELINE')[0]
             dateline = e != nil ? e.text.strip : ''
             #dateline = e != nil ? e.text.strip : ''
             sen_num = 0
-            document.get_elements('/DOC/TEXT/s').each do |e|
-                sent_txt = e.text.strip
+            document.get_elements('/DOC/TEXT').each do |e|
+                sent_txt = e.text.strip + " " + e.elements.map {|a| a.text.strip} .join(" ")
+                sent_txt = sent_txt.gsub!(/\s+/, ' ')
                 text << sent_txt + " "
                 doc_sentences[sen_num] = sent_txt
                 sen_num += 1
             end
         else
-            e = document.get_elements('/DOC/DOCNO')[0] != nil ? document.get_elements('/DOC/DOCNO')[0] : document.get_elements('/DOC/DOCID')[0]
+            # e = document.get_elements('/DOC/DOCNO')[0] != nil ? document.get_elements('/DOC/DOCNO')[0] : document.get_elements('/DOC/DOCID')[0]
+            e = document.get_elements('/DOC/ID')[0] != nil ? document.get_elements('/DOC/ID')[0] : document.get_elements('/DOC/DOCNO')[0]
             doc_id = e != nil ? e.text.strip : ''
             e = document.get_elements('/DOC/DOCTYPE')[0]
             doc_type = e != nil ? e.text.strip : ''
+            # STDERR.puts doc_type
+
             #e = document.get_elements('/DOC/BODY/HEADLINE')[0]
             #headline = e != nil ? e.text.strip : ''
-            headline = document.get_elements('/DOC/BODY/HEADLINE/s').map {|a| a.text.strip} .join(" ")
+            headline = document.get_elements('/DOC/BODY/HEADLINE').map {|a| a.text.strip} .join(" ")
+            # STDERR.puts headline
+
             e = document.get_elements('/DOC/DATE_TIME')[0] != nil ? document.get_elements('/DOC/DATE_TIME')[0] : document.get_elements('/DOC/DATETIME')[0]
             dateline = e != nil ? e.text.strip : ''
+            # STDERR.puts dateline
+
             sen_num = 0
-            document.get_elements('/DOC/BODY/TEXT/s').each do |e|
-                sent_txt = e.text.strip
+            document.get_elements('/DOC/BODY/TEXT').each do |e|
+                # sent_txt = e.text.strip
+                sent_txt = e.text.strip + " " + e.elements.map {|a| a.text.strip} .join(" ")
+                sent_txt = sent_txt.gsub!(/\s+/, ' ')
+                # STDERR.puts sent_txt
                 text << sent_txt + " "
                 doc_sentences[sen_num] = sent_txt
                 sen_num += 1

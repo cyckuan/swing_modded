@@ -35,6 +35,9 @@ if __FILE__ == $0 then
     elsif clean_data == "yes"
         use_clean_data = true
     end
+	
+	# STDERR.puts test_dir, xml_file, which_set, use_clean_data
+	
     #Computing category statistics for guided summarization   
     if granularity == "sentence"
         cat_stat = CategoryStatistics.new
@@ -70,6 +73,8 @@ if __FILE__ == $0 then
                 user_features += "| ruby Features/ckld.rb -s #{stat_file} "
             when 'sl'
                 user_features += "| ruby Features/sentencelength.rb "
+            when 'ss'
+                user_features += "| ruby Features/sentencespecificity.rb "
             else
                 puts "Invalid features"
             end
@@ -78,6 +83,16 @@ if __FILE__ == $0 then
         
         cmd_process_data = use_clean_data ? "ruby Input/ProcessCleanDocs.rb -s #{set_id} -x #{xml_file}" :
             "ruby Input/ProcessTACTestDocs.rb -s #{set_id} -x #{xml_file} | ruby Input/SentenceSplitter.rb"
+
+		conf = ParseConfig.new(File.dirname(__FILE__)+'/../configuration.conf')
+		sentence_file = conf.params['general']['sentence file']
+		sentence_map = conf.params['general']['sentence map']
+		sentence_scores = conf.params['general']['sentence scores']
+			
+		`/data/speciteller/speciteller/speciteller.py --inputfile #{sentence_file} --outputfile /#{sentence_scores}`
+
+		STDERR.puts xml_file
+
 
             #str = `cd #{File.dirname(__FILE__)}/..; \
         str = `#{cmd_process_data} \
