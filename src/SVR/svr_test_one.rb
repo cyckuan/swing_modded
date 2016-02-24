@@ -10,7 +10,7 @@ require 'pp'
 require 'json'
 require 'fileutils'
 require 'getopt/std'
-require 'SVR/svr_train'
+#require 'SVR/svr_train'
 #require File.dirname(__FILE__)+'/svr_train'
 
 def svr_test(l_JSON, model_file)

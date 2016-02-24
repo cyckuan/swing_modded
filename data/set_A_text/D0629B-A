@@ -1,5 +1,5 @@
-0_0	0.045454545454545456	PITTSBURGH (AP) -- A new computer virus can allow documents to be e-mailed to other people without warning, a potential security breach that should worry businesses and governments, an expert at Carnegie Mellon University said Saturday.
-0_1	0.42424242424242425	The ``Melissa macro'' or W97M--Melissa virus spreads via infected e-mail and attacks computers loaded with Microsoft's widely used Word 97 or Word 2000 programs, according to CERT -- or Computer Emergency Response Team -- Carnegie Mellon's Department of Defense-funded computer security team.
+0_0	0.045454545454545456	PITTSBURGH (AP) --A new computer virus can allow documents to be e-mailed to other people without warning, a potential security breach that should worry businesses and governments, an expert at Carnegie Mellon University said Saturday.
+0_1	0.3939393939393939	The ``Melissa macro'' or W97M--elissa virus spreads via infected e-mail and attacks computers loaded with Microsoft's widely used Word 97 or Word 2000 programs, according to CERT -- or Computer Emergency Response Team -- Carnegie Mellon's Department of Defense-funded computer security team.
 0_2	0.0	CERT first heard of the virus Friday afternoon and its members worked through the night to analyze the virus and develop a fix, CERT manager Katherine Fithen said.
 0_3	0.0	``We're getting so many reports from across the world, that we know this is going to be a huge problem come Monday,'' Fithen said.
 0_4	0.0	She noted that since CERT was founded 10 years ago, this is only the second time it has considered a virus important enough to warrant a public announcement.
@@ -14,9 +14,9 @@
 0_13	0.125	Infected documents are sent as attachments to e-mails most frequently bearing a header: ``Subject: Important Message From'' the name of person whose computer relayed the virus.
 0_14	0.0	The body of the message says ``Here is that document you asked for...
 0_15	0.0	don't show it to anyone else ;-)''.
-0_16	0.1	*------ EDITOR'S NOTE: CERT information about the Melissa virus is available on the Web at http://www.cert.org/advisories/CA-99-04-Melissa-Macro-Virus.html.
+0_16	0.1	*----- EDITOR'S NOTE: CERT information about the Melissa virus is available on the Web at http://www.cert.org/advisories/CA-99-04-Melissa-Macro-Virus.html.
 0_17	0.0	Microsoft has a patch available at http://www.microsoft.com/security/bulletins/ms99-002.asp .
-1_0	0.4	TAIPEI, Taiwan (AP) -- A former computer engineering student was identified by his college today as the author of the Chernobyl virus -- the menace that caused hundreds of thousands of computer meltdowns around the world this week.
+1_0	0.4	TAIPEI, Taiwan (AP) --A former computer engineering student was identified by his college today as the author of the Chernobyl virus -- the menace that caused hundreds of thousands of computer meltdowns around the world this week.
 1_1	0.125	The Tatung Institute of Technology had punished Chen Ing-hau last April when the virus he wrote as a student began to cause damage in an inter-college data system, according to Lee Chee-chen, the institute's dean of student affairs.
 1_2	0.0	Chen, who was a senior at the time, was given a demerit but not expelled.
 1_3	0.6666666666666666	The Chernobyl virus is known in Taiwan as the CIH, using Chen's initials.
@@ -25,17 +25,17 @@
 1_6	0.0	Lee said he was not sure how the virus ended up causing so much destruction a year later.
 1_7	0.0	Chen graduated from the college last summer and now is serving Taiwan's two-year compulsory military service, Lee said.
 1_8	0.0	Officials of the Bureau of Criminal Investigation said they would seek permission to question Chen.
-1_9	0.7307692307692307	The unusually destructive virus -- timed to strike on April 26, the 13th anniversary of the Chernobyl nuclear disaster -- tries to erase a computer's hard drive and write gibberish into its system settings to prevent the machine from being restarted.
+1_9	0.7307692307692307	The unusually destructive virus --timed to strike on April 26, the 13th anniversary of the Chernobyl nuclear disaster -- tries to erase a computer's hard drive and write gibberish into its system settings to prevent the machine from being restarted.
 1_10	0.3333333333333333	Turkey and South Korea each reported 300,000 computers damaged Monday, and there were more elsewhere in Asia and the Middle East.
 1_11	0.1111111111111111	Fewer than 10,000 of the 50 million computers in the United States were affected.
-2_0	0.058823529411764705	JOHANNESBURG, August 19 (Xinhua) -- The highly destructive Hare KRSNA computer virus is poised to strike on August 22, said sources obtained here today.
+2_0	0.058823529411764705	JOHANNESBURG, August 19 (Xinhua) --The highly destructive Hare KRSNA computer virus is poised to strike on August 22, said sources obtained here today.
 2_1	0.28	According to South Africa's Computer Virus Helpline Co-ordinator Ian Melamed, Hare KRSNA is at present the most widely reported computer virus in the country and could wipe out all information stored on the hard drives of infected computers on that date.
 2_2	0.09090909090909091	The European Institute for Computer Anti-Virus has warned earlier that the virus was spreading world-wide through the internet.
 2_3	0.0	The warning also mentioned specifically infected files on the Internet News Groups Alt.Sex.
 2_4	0.07692307692307693	Technically, the Hare KRSNA Virus is a multi-partite, stealth, slow polymorphic virus which makes it particularly destructive, according to experts.
 2_5	0.0	The helpline is offering a free, 24-hour advisory service countrywide for the detection and removal programme of the virus, the local sources said.
 2_6	0.75	The disk from the helpline would detect and remove more than 9400 other computer viruses.
-3_0	0.10526315789473684	NEW YORK (AP) -- Several mutations of the fast-moving computer virus called Melissa surfaced in cyberspace Tuesday, but researchers said none seems to be as effective as the original in clogging e-mail systems.
+3_0	0.10526315789473684	NEW YORK (AP) --Several mutations of the fast-moving computer virus called Melissa surfaced in cyberspace Tuesday, but researchers said none seems to be as effective as the original in clogging e-mail systems.
 3_1	0.0	Separately, an executive of a small software company in Cambridge, Mass.
 3_2	0.0	, said he had found clues linking the virus to a still-unidentified writer who uses the computer handle ``VicodinES''.
 3_3	0.043478260869565216	Richard Smith, president of Phar Lap Software, a firm that makes operating systems and software tools, said he thinks the virus writer distributed it using an account stolen from America Online 15 months ago.
@@ -44,7 +44,7 @@
 3_6	0.0	The virus arrives to its victims disguised as an e-mail from a friend, with a note in the subject line saying that an important document is attached.
 3_7	0.0	The attachment is a document in Microsoft's Word format that lists Internet pornography sites.
 3_8	0.13333333333333333	Once the user opens that file, the virus digs into the user's address book and sends infected documents to the first 50 addresses.
-3_9	0.0	One of the variations that appeared Tuesday -- carrying the name Melissa.A -- leaves the subject line blank, a change that can foil electronic filters that are designed to detect and delete the original message, said Dan Schrader, director of product marketing for Trend Micro Inc.
+3_9	0.0	One of the variations that appeared Tuesday --carrying the name Melissa.A -- leaves the subject line blank, a change that can foil electronic filters that are designed to detect and delete the original message, said Dan Schrader, director of product marketing for Trend Micro Inc.
 3_10	0.0	, an anti-virus company in Cupertino, Calif.
 3_11	0.0	Another variant, ``Papa,'' appeared Monday afternoon.
 3_12	0.21428571428571427	It attaches a Microsoft Excel spreadsheet document which, when opened, sends out 60 e-mails, however Papa has bugs that sometimes prevent it from working.
@@ -121,9 +121,9 @@
 4_58	0.0	``It is by far the most prolific threat I've seen in a long time,'' said Carey Nachenberg, chief researcher at the Symantec Antivirus Research Center in Santa Monica, Calif.
 4_59	0.0	, adding that future virus worms will spread faster as more PC users connect to the Internet through always-connected high-speed phone lines and cable modems.
 4_60	0.0	But he expressed hope that once Melissa's author is identified and tied to the whipping post, others will be deterred from releasing such viruses into the world.
-5_0	0.4	BEIJING, December 7 (Xinhua) -- China's leading anti-virus company, the Rising Computer Technology, warned computer users that a killer virus dubbed "THUS" may attack computer hard drives on December 13.
+5_0	0.4	BEIJING, December 7 (Xinhua) --China's leading anti-virus company, the Rising Computer Technology, warned computer users that a killer virus dubbed "THUS" may attack computer hard drives on December 13.
 5_1	0.06666666666666667	Liu Xu, an anti-virus expert, suggested computer users delete the virus with anti-virus software before December 13 or change the date.
-6_0	0.25	WASHINGTON (AP) -- A virus that can erase a computer's hard-drive and prevent the equipment from restarting is poised to strike on Monday, but experts say off-the-shelf antivirus software can prevent infection, and several companies are offering free inoculation tools on their Web sites.
+6_0	0.25	WASHINGTON (AP) --A virus that can erase a computer's hard-drive and prevent the equipment from restarting is poised to strike on Monday, but experts say off-the-shelf antivirus software can prevent infection, and several companies are offering free inoculation tools on their Web sites.
 6_1	0.21052631578947367	The virus has been dubbed Chernobyl because its most common version was programmed to activate on computers using Windows 95 and Windows 98 on Monday, the 13th anniversary of the nuclear disaster in Ukraine.
 6_2	0.0	Another, less common, version, strikes computers on the 26th day of any month.
 6_3	0.0	``It's pretty much just another virus.
@@ -144,12 +144,12 @@
 6_18	0.0	Gene Hodges, a vice president for security at Network Associates, said the company was hoping for the best but bracing for the worse.
 6_19	0.0	``It can be fairly significant,'' he said.
 6_20	0.0	``You don't know until the bomb actually goes off.''
-7_0	0.15	BUCHAREST, December 15 (Xinhua) -- Computer network of the Romanian presidential office has been out of gear for two days under the attack of a computer virus, the Romanian Press Agency reported Wednesday.
+7_0	0.15	BUCHAREST, December 15 (Xinhua) --Computer network of the Romanian presidential office has been out of gear for two days under the attack of a computer virus, the Romanian Press Agency reported Wednesday.
 7_1	0.0	The presidential office did not specify what kind of computer virus disturbed its daily work.
 7_2	0.07142857142857142	But the press report said that the virus had entered the network through an E-mail message several days ago and broke out on Monday, December 13.
 7_3	0.08333333333333333	According to local media, it was on December 13 that a vicious macro-virus named Killer C-Disc THUS broke out.
 7_4	0.1111111111111111	The virus deletes all the documents that are not in use on C-Disc, and paralyzes the entire window system.
-8_0	0.19230769230769232	MANILA, May 9 (Xinhua) -- The Philippine government asked the congress Tuesday to pass a law that would impose stiff penalties on cyber crimes following a delay in the arrest of the suspected creators of the "love bug" computer virus.
+8_0	0.19230769230769232	MANILA, May 9 (Xinhua) --The Philippine government asked the congress Tuesday to pass a law that would impose stiff penalties on cyber crimes following a delay in the arrest of the suspected creators of the "love bug" computer virus.
 8_1	0.0	Executive Secretary Ronaldo Zamora underscored this need in a radio interview as he pointed out that the "Iloveyou" virus, which was allegedly launched in the Philippines, caused much damage not just here but around the world.
 8_2	0.5769230769230769	Zamora quoted reports as saying the computer virus, which was allegedly created by a Philippine couple using Internet access cards,has caused up to 2.6 billion U.S. dollars in damage to computer systems in more than 20 countries in Asia, America and Europe.
 8_3	0.0	"It is clear that the virus caused much damage.
@@ -163,7 +163,7 @@
 8_11	0.0	We have to examine all facts pertaining to the case," he said.
 8_12	0.5384615384615384	The Philippine couple, Rommel Lamores and Irene de Guzman, who were allegedly responsible for the spread of the virus, have not been charged yet.
 8_13	0.0	The suspects, employees of two separate banks in Manila, were nabbed one after the other in NBI operations Monday.
-9_0	0.0	NEW YORK (AP) -- The close-knit underground of computer virus creators split into two camps at the news that one of their own may have been arrested for releasing malicious Melissa.
+9_0	0.0	NEW YORK (AP) --The close-knit underground of computer virus creators split into two camps at the news that one of their own may have been arrested for releasing malicious Melissa.
 9_1	0.0	``The whole community has really been shaken up by this,'' said B.K.
 9_2	0.0	Delong, who follows the virus scene.
 9_3	0.0	``The first group is one that wants a better reputation.
@@ -186,8 +186,8 @@
 9_20	0.0	``They (the Black Hat programmers) are looking for someone to blame,'' said Delong.
 9_21	0.0	They resent the treatment VicodinES supposedly received at the hands of the media, and they're rallying around their own.
 9_22	0.0	They said he is a really nice guy.''
-10_0	0.15	NEW YORK (AP) -- The FBI on Friday tried to track the author of a file-destroying computer virus that has hit some of the nation's biggest corporations and infected tens of thousands of machines.
-10_1	0.047619047619047616	Software companies posted new virus-killing programs on their Web sites to attack the Worm.Explore.Zip virus, which enters machines in almost the same way as the recent Melissa virus -- by disguising itself as a friendly piece of e-mail.
+10_0	0.15	NEW YORK (AP) --The FBI on Friday tried to track the author of a file-destroying computer virus that has hit some of the nation's biggest corporations and infected tens of thousands of machines.
+10_1	0.047619047619047616	Software companies posted new virus-killing programs on their Web sites to attack the Worm.Explore.Zip virus, which enters machines in almost the same way as the recent Melissa virus --by disguising itself as a friendly piece of e-mail.
 10_2	0.18181818181818182	Melissa infected hundreds of thousands of computers, but there were signs Friday that the new virus may not be spreading as quickly.
 10_3	0.0	Still, it hit systems at leading technology companies such as Compaq Computer and Motorola and other major companies, including AT&AMP;T, Boeing and General Electric.
 10_4	0.1111111111111111	The FBI would not reveal the methods of its investigation or provide a more specific estimate of how many computers were infected.
@@ -222,8 +222,8 @@
 10_33	0.0	At least 20 to 30 other computers were stricken by the virus before Lucent technicians shut down the e-mail system and inoculated it.
 10_34	0.0	``I think we nipped it in the bud,'' said Skalko.
 10_35	0.0	Because of the way it works, Worm.Explore.Zip actually does not fit the technical definition of a computer virus.
-10_36	0.0	Instead, software experts said, the bug should be classified as a ``Trojan Horse'' -- a name borrowed from an ancient battle in which Greek soldiers hid inside a wooden horse to launch a surprise attack on the city of Troy.
-11_0	0.25	JERUSALEM, May 21 (Xinhua) -- Computer anti-virus experts in Jerusalem Sunday expressed their suspicion that a new, but even dangerous type of "I Love You" virus may have originated in Israel.
+10_36	0.0	Instead, software experts said, the bug should be classified as a ``Trojan Horse'' --a name borrowed from an ancient battle in which Greek soldiers hid inside a wooden horse to launch a surprise attack on the city of Troy.
+11_0	0.25	JERUSALEM, May 21 (Xinhua) --Computer anti-virus experts in Jerusalem Sunday expressed their suspicion that a new, but even dangerous type of "I Love You" virus may have originated in Israel.
 11_1	0.0	Network Associates, an Israeli hi-tech start-up company, reportedly was hit by the virus on Thursday, which is earlier than any other reports of such virus throughout the world, according to a company spokesman.
 11_2	0.0	Thus, the company had begun its internal investigation to check whether an employee of the company had written the virus code and distributing it, currently known as "NewLove Bug".
 11_3	0.3333333333333333	The previous "Love Bug" rapidly spread throughout Europe, Asia, and the United States earlier this month, affecting thousands of computers and causing disastrous damages.
@@ -237,15 +237,15 @@
 11_11	0.06666666666666667	Numerous experts had issued warnings here that anybody should be very watchful when he wants to open an e-mail attachment, especially with a .vbs, .vps, or .vns extension filename.
 11_12	0.0	There were already infection reports in the United States, while U.S. experts had said that the most critical time will be Monday.
 11_13	0.0	Only if the damage does not prove to be too severe by then, could the computer business breathe a sigh of relief .
-12_0	0.0	NEW YORK (AP) -- Proving even more virulent than first believed, the computer virus Worm.Explore.Zip sprang back from a deceptively quiet weekend amid warnings that it uses more than just e-mail trickery to spread.
+12_0	0.0	NEW YORK (AP) --Proving even more virulent than first believed, the computer virus Worm.Explore.Zip sprang back from a deceptively quiet weekend amid warnings that it uses more than just e-mail trickery to spread.
 12_1	0.043478260869565216	Computer support lines were inundated Monday with calls about new outbreaks of the file-killing virus, which experts now say was also designed to spread within an organization through computer network links that enable co-workers to share files on each others' machines.
 12_2	0.15	As the epidemic first picked up steam last week, infecting tens of thousands of computers at major corporations, the primary mode of transmission had seemed to be a friendly e-mail that tricks the recipient into opening a contaminated file.
 12_3	0.125	By eliminating the need for a helping human hand, the Worm.Explore.Zip could prove more difficult to irradicate than the Melissa and Chernobyl viruses that struck earlier this spring by e-mail only.
 12_4	0.16666666666666666	``As time goes on, the programs intruders are using are becoming more complex,'' said Mark Zajicek, a member of the government-chartered Computer Emergency Response Team at Carnegie Mellon University in Pittsburgh.
-12_5	0.0	Over the weekend, the team found during tests that the virus would reappear seconds after being removed from a computer -- if that machine was linked by a network to another machine that was still infected.
+12_5	0.0	Over the weekend, the team found during tests that the virus would reappear seconds after being removed from a computer --if that machine was linked by a network to another machine that was still infected.
 12_6	0.2777777777777778	Most major corporations, universities and government agencies link thousands of personal computers in networks, helping people work together, but also making their machines vulnerable to the bug.
 12_7	0.0	``It only takes one opening, one infected computer within a company, to rapidly spread within that company,'' said Zajicek.
-12_8	0.0	``That helps explain what we've been seeing -- that the program wasn't spreading from site to site as quickly as it was within a site''.
+12_8	0.0	``That helps explain what we've been seeing --that the program wasn't spreading from site to site as quickly as it was within a site''.
 12_9	0.0	The additional mode of contamination may also render some of the cures posted on the Internet by software companies last week less effective, said Zajicek ``Based on the symptoms we've seen in our own test lab, we have seen cases where such fixes would not be effective,'' he said.
 12_10	0.0	Although nervous calls to computer support lines dropped off sharply over the weekend, a support technician for the anti-virus software maker Network Associates said Monday's call volume was even heavier than on Thursday and Friday, with 30 to 40 callers waiting on hold at any one time.
 12_11	0.0	The Federal Bureau of Investigation was trying to track down the author of the virus, but the agency declined to provide any updates on the probe over the weekend.
@@ -260,7 +260,7 @@
 12_20	0.26666666666666666	Among the files destroyed are those created by the writing program Microsoft Word, the spreadsheet program Excel and PowerPoint, which is used to create graphic presentations.
 12_21	0.0	Monday's new revelation about the way the bug works also fueled more debate about what terms to use to describe it.
 12_22	0.0	Because of the way it replicates, Worm.Explore.Zip actually does not fit the technical definition of a computer virus.
-12_23	0.0	Based on the e-mail mode of contamination, it best would classified as a ``Trojan Horse'' -- a name borrowed from an ancient battle in which Greek soldiers hid inside a wooden horse to launch a surprise attack on the city of Troy.
+12_23	0.0	Based on the e-mail mode of contamination, it best would classified as a ``Trojan Horse'' --a name borrowed from an ancient battle in which Greek soldiers hid inside a wooden horse to launch a surprise attack on the city of Troy.
 12_24	0.0	But based on the file-sharing method of infection, it would more aptly be described as a ``worm.''
 13_0	0.0	As physicians are wont to tell us when we drag ourselves to the infirmary suffering from something they can't diagnose, there's a nasty bug going around.
 13_1	0.21428571428571427	It got into my computer's sinus cavities numerous times in the past week or two, and eventually caused me considerable grief.
@@ -303,7 +303,7 @@
 13_38	0.0	If you slog around on the Internet and indulge in e-mail, you might want to make a note of www.mailstart.com.
 13_39	0.0	In the meantime, I'm going to see about updating Eudora.
 13_40	0.0	E-mail: jwarner(at)ajc.com Warner writes for the Atlanta Journal-Constitution Story Filed By Cox Newspapers For Use By Clients of the New York Times News Service &QL; NYT-02-22-99 1101EST &QL;
-14_0	0.125	NEW YORK (AP) -- A computer virus timed to strike Windows PCs on Christmas Day has yet to pose a significant threat because of its low prevalence, but anti-virus software makers are gearing up to help computer users combat it.
+14_0	0.125	NEW YORK (AP) --A computer virus timed to strike Windows PCs on Christmas Day has yet to pose a significant threat because of its low prevalence, but anti-virus software makers are gearing up to help computer users combat it.
 14_1	0.3076923076923077	The new virus, named W32/Kriz.3862, is designed to damage Windows 95, Windows 98 and Windows NT machines.
 14_2	0.6	The virus overwrites data on hard drives and destroys the memory that stores a computer's setup, sometimes making a computer unbootable.
 14_3	0.043478260869565216	Only two cases of the virus have been detected ``in the wild'' so far, said Sal Viveros, group marketing manager in the virus defense division of Santa-Clara, Calif.-based Network Associates, maker of the McAfee virus protection software.
@@ -318,7 +318,7 @@
 14_12	0.16666666666666666	``Unlike the Chernobyl virus, it can infiltrate a business environment''.
 14_13	0.0	Both companies have developed software that detects and disables the virus.
 15_0	0.0	FREEHOLD, N.J.
-15_1	0.0	(AP) -- The man accused of spreading the so-called ``Melissa'' computer virus appeared in court for the first time Thursday, answering the judge's questions with a nod of the head or ``Yes, sir''.
+15_1	0.0	(AP) --The man accused of spreading the so-called ``Melissa'' computer virus appeared in court for the first time Thursday, answering the judge's questions with a nod of the head or ``Yes, sir''.
 15_2	0.4	The judge advised David L.
 15_3	0.0	Smith, 30, of the charges against him and informed him of his rights.
 15_4	0.0	``You are charged with some serious offenses,'' Judge John A.
@@ -399,14 +399,14 @@
 16_63	0.0	Finally, remember that computers can do weird things and mess up your files without the aid of a virus.
 16_64	0.5454545454545454	I have a friend who immediately suspects computer viruses whenever the printer stops working or her system crashes.
 16_65	0.125	As far as I can tell, the only thing that is infecting her computer is Windows 98.
-17_0	0.16666666666666666	MADRID, July 2 (Xinhua) -- Spanish computer experts have discovered a computer virus set to become active on July 12, the day of the World Cup finals in Paris.
+17_0	0.16666666666666666	MADRID, July 2 (Xinhua) --Spanish computer experts have discovered a computer virus set to become active on July 12, the day of the World Cup finals in Paris.
 17_1	0.0	A spokesman for the Panda Software company said Thursday that the virus was "very complex and destructive" and could erase all data on the hard disk and automatically print unwanted documents to printers.
 17_2	0.5	The virus, which targets Microsoft Office 97 Word documents, will show a flashing banner of "Vive la coupe de monde"!
 17_3	0.07692307692307693	(Long live the World Cup)! on the screens of infected computers when a user tries to open an MS Word file.
 17_4	0.07692307692307693	A dialogue window will then pop up and the user will be asked to choose which football team will win the game, while the virus will be working in the background.
 17_5	0.0	The company spokesman added that the virus was probably created in France as all of its files were written in French.
-18_0	0.1111111111111111	NEW YORK (AP) -- Proving more destructive than expected, the Chernobyl virus caused hundreds of thousands of computer meltdowns around the world, though the effects were far worse overseas than in the United States.
-18_1	0.7307692307692307	The unusually destructive virus -- timed to strike on April 26, the 13th anniversary of the Chernobyl nuclear disaster -- tries to erase a computer's hard drive and write gibberish into its system settings to prevent the machine from being restarted.
+18_0	0.1111111111111111	NEW YORK (AP) --Proving more destructive than expected, the Chernobyl virus caused hundreds of thousands of computer meltdowns around the world, though the effects were far worse overseas than in the United States.
+18_1	0.7307692307692307	The unusually destructive virus --timed to strike on April 26, the 13th anniversary of the Chernobyl nuclear disaster -- tries to erase a computer's hard drive and write gibberish into its system settings to prevent the machine from being restarted.
 18_2	0.25	While experts were still tallying numbers, Turkey and South Korea each reported 300,000 computers damaged Monday, and there were more elsewhere in Asia and the Middle East.
 18_3	0.0	Officials said warnings there weren't heeded.
 18_4	0.0	``Arguably, this is the most malicious computer virus,'' said Dan Schrader, director of product marketing at Trend Micro Inc.
@@ -427,7 +427,7 @@
 18_19	0.0	If an infected program was sent in an e-mail, the virus was passed on to the recipient.
 18_20	0.0	``Turkey was caught unprepared,'' said Mustafa Ucoklar, an electronics engineer in Turkey, where the virus infected computers at banks, an airport and state-run radio and TV stations, according to Turkey's Radikal newspaper.
 18_21	0.0	``The warnings were there, but nobody took any notice of them''.
-18_22	0.10526315789473684	South Korean officials also reported about 300,000 computers were hit in government offices, schools and businesses -- about 4 percent of the nation's computers -- in the worst attack of its kind in the country.
+18_22	0.10526315789473684	South Korean officials also reported about 300,000 computers were hit in government offices, schools and businesses --about 4 percent of the nation's computers -- in the worst attack of its kind in the country.
 18_23	0.0	``We have been careless and lacked an understanding of this virus,'' said Ahn Byung-yop, vice minister of information and communications.
 18_24	0.75	``We need to strengthen our alert system and public education on computer viruses''.
 18_25	0.0	Schrader said the countries hardest hit have widespread use of pirated software and lack recent virus software.
@@ -439,7 +439,7 @@
 18_31	0.0	Businesses, banks and publishing houses in India were shut down and information worth millions of dollars was lost, the Indian Express newspaper reported.
 18_32	0.15384615384615385	Local media reported that up to 10 percent of all computer users in the United Arab Emirates were affected; at least 10,000 computers were struck in Bangladesh; reports in China varied from 7,600 computers damaged to 100,000.
 18_33	0.0	``This was the country's worst computer disaster,'' said Ahmed Hasan, general secretary of the Computer Society in Bangladesh.
-19_0	0.05	NEW YORK, April 15 (Xinhua) -- The rate of computer virus infection in corporate America has nearly tripled in the past year despite a significant increase in the usage of anti-virus products.
+19_0	0.05	NEW YORK, April 15 (Xinhua) --The rate of computer virus infection in corporate America has nearly tripled in the past year despite a significant increase in the usage of anti-virus products.
 19_1	0.0	This was indicated by the results of a survey released today by the National Computer Security Association (NCSA).
 19_2	0.0	The survey also found that electronic mail is now one of the leading methods of transmitting viruses.
 19_3	0.045454545454545456	Virtually all medium and large organizations in North America experienced at least one computer virus infection firsthand, and the survey indicated about 40 percent of all computers used in the surveyed companies would experience a virus infection within a year.
@@ -476,7 +476,7 @@
 20_21	0.3333333333333333	IMPACT: Possibly tens of thousands of computers affected.
 20_22	0.0	Steven Trilling, director of research for Symantec's Antivirus Research Center, said his center had more than 3,000 messages from people submitting the virus.
 20_23	0.0	STATUS: Author unknown.
-21_0	0.2608695652173913	DHAKA, December 27 (Xinhua) -- Home-made computer viruses are not new in Bangladesh, as the country's first locally-produced virus, the Dhaka Virus, was created in 1991, The Daily Star newspaper reported Monday.
+21_0	0.2608695652173913	DHAKA, December 27 (Xinhua) --Home-made computer viruses are not new in Bangladesh, as the country's first locally-produced virus, the Dhaka Virus, was created in 1991, The Daily Star newspaper reported Monday.
 21_1	0.13333333333333333	The virus, which was created by a local programmer and later renamed T-virus, was not destructive but intended to disturb the MS-Word working environment on the screen.
 21_2	0.07142857142857142	The virus used to erase the screen for a few seconds and then an instruction box appeared to suggest pressing T to go back to the working environment.
 21_3	0.0	Businessmen were quoted as saying the virus had affected computers of several organizations.
@@ -485,17 +485,17 @@
 21_6	0.07142857142857142	The local viruses have faded out of people's mind because of their less-destructive nature and the frequent invasion of international viruses, the report said.
 21_7	0.0	But computer experts feared that more locally-created viruses would affect machines across the country as more students enrolled in computer courses.
 21_8	0.0	"It will soon be a reality in Bangladesh where the local virus creators would reign," computer expert Anko Shohel was quoted as saying.
-22_0	0.09090909090909091	TAIPEI, Taiwan (AP) -- The author of the Chernobyl computer virus told investigators that he created the bug hoping to humiliate and take revenge on what he called incompetent antivirus software providers, police said today.
+22_0	0.09090909090909091	TAIPEI, Taiwan (AP) --The author of the Chernobyl computer virus told investigators that he created the bug hoping to humiliate and take revenge on what he called incompetent antivirus software providers, police said today.
 22_1	0.0	But he admitted he didn't expect it to cause worldwide damage, a police statement said.
 22_2	0.2631578947368421	Chen Ing-hau, 24, looked nervous and was speechless when he was mobbed by reporters after being summoned for police questioning on his involvement in a case that caused at least 600,000 computer meltdowns.
-22_3	0.30434782608695654	The Chernobyl virus -- known in Taiwan as the CIH, for Chen's initials -- had even pressed the Chinese People's Liberation Army to study antivirus programs to prevent it from invading its computers, the police statement said.
+22_3	0.30434782608695654	The Chernobyl virus --known in Taiwan as the CIH, for Chen's initials -- had even pressed the Chinese People's Liberation Army to study antivirus programs to prevent it from invading its computers, the police statement said.
 22_4	0.2222222222222222	Chen created the virus last April when he was still a student of computer engineering at the Institute of Technology.
 22_5	0.0	Chen has since graduated and has been undergoing Taiwan's mandatory two-year military service.
 22_6	0.3	Chen had spent long hours playing computer games since entering college and was a frequent victim of computer viruses when downloading video games and other software from the Internet, the police statement said.
 22_7	0.0	``He said he created the highly vicious virus that could avoid detection by available antivirus programs in order to make a fool of the software providers, from whom he had bought antivirus programs that proved useless,'' the statement said.
 22_8	0.0	``He did not expect the virus to cause such a great impact.
 22_9	0.0	He regretted his deeds and apologize to all its victims''.
-22_10	0.7307692307692307	The unusually destructive virus -- timed to strike on April 26, the 13th anniversary of the Chernobyl nuclear disaster -- tries to erase a computer's hard drive and write gibberish into its system settings to prevent the machine from being restarted.
+22_10	0.7307692307692307	The unusually destructive virus --timed to strike on April 26, the 13th anniversary of the Chernobyl nuclear disaster -- tries to erase a computer's hard drive and write gibberish into its system settings to prevent the machine from being restarted.
 22_11	0.5454545454545454	Under Taiwanese law, someone convicted of spreading computer viruses can face up to three years in prison.
 22_12	0.0	Police did not say whether Chen will be charged.
 22_13	0.0	Computer experts said Chen might not be charged because he did not intend to spread the virus.

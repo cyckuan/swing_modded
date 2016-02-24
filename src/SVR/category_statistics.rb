@@ -170,7 +170,7 @@ def build_category_topic_map category, topic_id
 end
 
 
-def json_build_category_statistics train_dir, xml_file, which_set, use_clean_data
+def json_build_category_statistics train_dir, xml_file, which_set, use_clean_data, sentence_file, sentence_map
 
     $g_docs_dir = train_dir
     #$g_cluster = opt['w']
@@ -178,8 +178,9 @@ def json_build_category_statistics train_dir, xml_file, which_set, use_clean_dat
     $g_topics = Dir.glob($g_docs_dir+'/*/*-'+which_set).sort #change cluster to B
     
     $g_topics.each do |l_topic|
-        str = use_clean_data ? `ruby Input/ProcessCleanDocs.rb -s #{l_topic} -x #{$g_xml}` :
-            `ruby Input/ProcessTACTestDocs.rb -s #{l_topic} -x #{$g_xml} | ruby Input/SentenceSplitter.rb`
+    
+        str = `ruby -W0 Input/ProcessCleanDocs.rb -s #{l_topic} -x #{$g_xml} | ruby -W0 Input/SentenceSplitter.rb | ruby -W0 Input/SentenceMapper.rb -s #{sentence_file} -m #{sentence_map}`
+        
         # STDERR.puts str
         l_JSON = JSON.parse str
         category = l_JSON['corpus'][0]["category"]
@@ -189,7 +190,7 @@ def json_build_category_statistics train_dir, xml_file, which_set, use_clean_dat
         lt_Sentences = []
         ld_Sentences = []
         l_JSON["splitted_sentences"].each do |l_Article|
-            ld_Sentences=l_Article["sentences"].values
+            ld_Sentences = l_Article["sentences"].values
             lt_Sentences.push ld_Sentences
        end
        build_topic_dfs_map lt_Sentences, topic_id
@@ -207,7 +208,7 @@ def json_build_category_statistics train_dir, xml_file, which_set, use_clean_dat
     end 
 
 
-
+ 
     $g_JSON = { "category_topic_freq"=>$g_CM , "category_doc_freq"=>$g_CDM,"category_term_freq"=>$g_CTM,"category_topics"=>$g_CTMap}
 
     stat_file = '../data/category_stats'

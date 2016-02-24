@@ -1,0 +1,5 @@
+2016-02-24 06:19:27 UTC - experiment started
+2016-02-24 06:20:11 UTC - experiment started
+2016-02-24 06:38:55 UTC - training completed
+2016-02-24 07:26:16 UTC - summary generated
+2016-02-24 07:26:33 UTC - evaluated results

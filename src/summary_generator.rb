@@ -9,6 +9,7 @@ require 'json'
 require 'fileutils'
 require 'Input/WordSplitter'
 require 'Input/StopList'
+require 'Features/FeaturePipeline'
 require 'SVR/svr_test_one'
 require 'SVR/category_statistics'
 require 'parseconfig'
@@ -23,25 +24,33 @@ if __FILE__ == $0 then
     which_set = test_conf.params['test']['document set']
     xml_file = test_conf.params['test']['xml file']
 
-
     max_len = test_conf.params['general']['summary length']
     
     features = test_conf.params['general']['features']
     granularity = test_conf.params['general']['scoring granularity']
     clean_data = test_conf.params['general']['clean data']
+
+    sentence_file = test_conf.params['general']['sentence file']
+    sentence_map = test_conf.params['general']['sentence map']
+    sentence_scores = test_conf.params['general']['sentence scores']
+
     
     if clean_data == "no"
         use_clean_data = false
     elsif clean_data == "yes"
         use_clean_data = true
     end
-	
-	# STDERR.puts test_dir, xml_file, which_set, use_clean_data
-	
+
+    STDOUT.puts "computing category statistics ..."
+
+    `rm #{sentence_file}`
+    `rm #{sentence_map}`
+    `rm #{sentence_scores}`
+    
     #Computing category statistics for guided summarization   
     if granularity == "sentence"
         cat_stat = CategoryStatistics.new
-        stat_file=cat_stat.json_build_category_statistics test_dir, xml_file, which_set, use_clean_data
+        stat_file=cat_stat.json_build_category_statistics test_dir, xml_file, which_set, use_clean_data, sentence_file, sentence_map
     elsif granularity == "NP"
         stat_file=  File.dirname(__FILE__)+'/../data/Phrases/NP_2011.txt'
     elsif granularity == "VP"
@@ -50,57 +59,43 @@ if __FILE__ == $0 then
         stat_file=  File.dirname(__FILE__)+'/../data/Phrases/PP_2011.txt'
     end
 
+    STDOUT.puts "computing category complete!"
+
+    STDOUT.puts "calculating sentence specificity scores"
+    
+    `/data/speciteller/speciteller/speciteller.py --inputfile #{sentence_file} --outputfile /#{sentence_scores}`
+    
+    STDOUT.puts "specificity scores complete!"
+    
+    STDOUT.puts "iterating through cases ..."
+    
     sets = Dir.glob(test_dir+'/*/*-'+which_set).sort
     set_cnt = 1
     sets.each do |set_id|
+        
+        STDOUT.puts "current set " + set_cnt.to_s + " : " + set_id
+        
         summary_id = File.basename(set_id)
-        puts set_cnt.to_s + ' ' + set_id + ' ' + summary_id
+        
         set_cnt += 1
 
+        feature_pipeline = build_feature_pipeline(features,stat_file)
 
-        feature_list = features.split(",")
-        feature_list =feature_list.map{ |feature| feature.strip}
-        user_features =''
-        feature_list.each do |feature|
-            case feature
-            when 'dfs'
-                user_features += "| ruby Features/dfs_bigram.rb "
-            when 'sp'
-                user_features += "| ruby Features/sentenceposition.rb "
-            when 'crs'
-                user_features += "| ruby Features/gfs.rb -s #{stat_file} "
-            when 'ckld'
-                user_features += "| ruby Features/ckld.rb -s #{stat_file} "
-            when 'sl'
-                user_features += "| ruby Features/sentencelength.rb "
-            when 'ss'
-                user_features += "| ruby Features/sentencespecificity.rb "
-            else
-                puts "Invalid features"
-            end
-        end
+        cmd_process_data = "ruby Input/ProcessCleanDocs.rb -s #{set_id} -x #{xml_file} | ruby Input/SentenceSplitter.rb"
 
-        
-        cmd_process_data = use_clean_data ? "ruby Input/ProcessCleanDocs.rb -s #{set_id} -x #{xml_file}" :
-            "ruby Input/ProcessTACTestDocs.rb -s #{set_id} -x #{xml_file} | ruby Input/SentenceSplitter.rb"
+        conf = ParseConfig.new(File.dirname(__FILE__)+'/../configuration.conf')
+        sentence_file = conf.params['general']['sentence file']
+        sentence_map = conf.params['general']['sentence map']
+        sentence_scores = conf.params['general']['sentence scores']
+            
+        `/data/speciteller/speciteller/speciteller.py --inputfile #{sentence_file} --outputfile /#{sentence_scores}`
 
-		conf = ParseConfig.new(File.dirname(__FILE__)+'/../configuration.conf')
-		sentence_file = conf.params['general']['sentence file']
-		sentence_map = conf.params['general']['sentence map']
-		sentence_scores = conf.params['general']['sentence scores']
-			
-		`/data/speciteller/speciteller/speciteller.py --inputfile #{sentence_file} --outputfile /#{sentence_scores}`
+        #str = `cd #{File.dirname(__FILE__)}/..; \
 
-		STDERR.puts xml_file
-
-
-            #str = `cd #{File.dirname(__FILE__)}/..; \
-        str = `#{cmd_process_data} \
-            #{user_features} \
-        | ruby SVR/svr_test_one.rb -f #{model_file} \
-        | ruby SentenceSelection/MMRSelectionWithSR.rb -s #{xml_file} --reduction --maxlength #{max_len} \
-        | ruby PostProcessing/ChoptoLength.rb -l #{max_len}` 
-
+        str = `#{cmd_process_data} #{feature_pipeline} \
+        | ruby -W0 SVR/svr_test_one.rb -f #{model_file} \
+        | ruby -W0 SentenceSelection/MMRSelectionWithSR.rb -s #{xml_file} --reduction --maxlength #{max_len} \
+        | ruby -W0 PostProcessing/ChoptoLength.rb -l #{max_len}` 
 
         l_JSON = JSON.parse(str)
 
@@ -124,4 +119,7 @@ if __FILE__ == $0 then
             `cp -f #{summ_dir + '/' + summary_id} ../data/set_A_summaries/`
         end
     end
+    
+    STDOUT.puts "iterations complete!"
+    
 end

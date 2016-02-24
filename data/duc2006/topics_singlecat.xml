@@ -1,0 +1,1503 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<TACtaskdata year="2006" track="SUMMARIZATION" task="GUIDED"  dataset="TRAIN">
+<topic id="D0601A" category="1">
+<title> Native American Reservation System - pros and cons </title>
+<docsetA id="D0601A-A">
+<doc id="NYT19991102.0060" />
+<doc id="NYT19980612.0403" />
+<doc id="APW20000801.0110" />
+<doc id="NYT19990315.0428" />
+<doc id="NYT19981211.0004" />
+<doc id="NYT20000716.0177" />
+<doc id="NYT19980815.0094" />
+<doc id="NYT19990415.0508" />
+<doc id="NYT19980622.0248" />
+<doc id="APW20000901.0039" />
+<doc id="APW20000330.0197" />
+<doc id="NYT19981012.0295" />
+<doc id="NYT19980822.0098" />
+<doc id="NYT20000228.0358" />
+<doc id="APW20000202.0083" />
+<doc id="APW19990707.0181" />
+<doc id="NYT19980812.0174" />
+<doc id="NYT19990921.0018" />
+<doc id="NYT19990723.0249" />
+<doc id="APW20000108.0062" />
+<doc id="NYT19990827.0397" />
+<doc id="NYT19990214.0127" />
+<doc id="APW20000713.0010" />
+<doc id="APW20000416.0024" />
+<doc id="NYT20000517.0349" />
+</docsetA>
+</topic>
+<topic id="D0602B" category="1">
+<title> steroid use among female athletes </title>
+<docsetA id="D0602B-A">
+<doc id="NYT19990528.0026" />
+<doc id="NYT19990911.0122" />
+<doc id="XIE20000930.0294" />
+<doc id="NYT19990419.0069" />
+<doc id="XIE19990808.0196" />
+<doc id="NYT20000205.0294" />
+<doc id="APW19980812.0878" />
+<doc id="XIE20000913.0219" />
+<doc id="APW19980818.0980" />
+<doc id="APW20000718.0065" />
+<doc id="XIE19990917.0319" />
+<doc id="XIE20000920.0346" />
+<doc id="NYT20000927.0026" />
+<doc id="XIE19990217.0078" />
+<doc id="NYT20000906.0004" />
+<doc id="NYT19980922.0343" />
+<doc id="NYT19990201.0337" />
+<doc id="XIE19990910.0186" />
+<doc id="NYT20000208.0235" />
+<doc id="NYT19980818.0449" />
+<doc id="NYT19990419.0267" />
+<doc id="NYT19990126.0018" />
+<doc id="NYT19980812.0155" />
+<doc id="APW19990820.0030" />
+<doc id="NYT19990531.0171" />
+</docsetA>
+</topic>
+<topic id="D0603C" category="1">
+<title> wetlands value and protection </title>
+<docsetA id="D0603C-A">
+<doc id="NYT20000911.0142" />
+<doc id="XIE19970924.0212" />
+<doc id="APW19991022.0012" />
+<doc id="XIE19971211.0299" />
+<doc id="XIE19991216.0310" />
+<doc id="XIE19970305.0101" />
+<doc id="NYT20000306.0521" />
+<doc id="NYT19990810.0105" />
+<doc id="XIE19970202.0088" />
+<doc id="APW19990901.0221" />
+<doc id="XIE19970202.0034" />
+<doc id="XIE19960320.0122" />
+<doc id="XIE19970304.0239" />
+<doc id="APW20000303.0253" />
+<doc id="APW20000907.0128" />
+<doc id="APW20000715.0124" />
+<doc id="APW20000303.0115" />
+<doc id="XIE20000224.0231" />
+<doc id="NYT20000909.0134" />
+<doc id="APW20000722.0090" />
+<doc id="NYT19990318.0453" />
+<doc id="NYT19990412.0027" />
+<doc id="NYT19990912.0223" />
+<doc id="NYT20000810.0383" />
+<doc id="XIE19980828.0050" />
+</docsetA>
+</topic>
+<topic id="D0604D" category="1">
+<title> anticipation of and reaction to the premier of Star Wars Episode I -- The Phantom Menace </title>
+<docsetA id="D0604D-A">
+<doc id="NYT19990503.0197" />
+<doc id="NYT19990514.0219" />
+<doc id="NYT19981123.0061" />
+<doc id="APW19990518.0246" />
+<doc id="NYT19990503.0461" />
+<doc id="NYT19990315.0219" />
+<doc id="APW19990626.0056" />
+<doc id="NYT19990518.0127" />
+<doc id="APW20000124.0232" />
+<doc id="NYT19990225.0083" />
+<doc id="NYT19990414.0094" />
+<doc id="NYT19981122.0093" />
+<doc id="NYT19990505.0197" />
+<doc id="NYT19990517.0174" />
+<doc id="APW19990506.0118" />
+<doc id="APW19990603.0098" />
+<doc id="NYT19990421.0412" />
+<doc id="APW19990413.0218" />
+<doc id="APW19990502.0092" />
+<doc id="NYT19990614.0087" />
+<doc id="APW19990526.0069" />
+<doc id="APW19990710.0084" />
+<doc id="APW19990507.0278" />
+<doc id="APW19990601.0176" />
+<doc id="NYT19990406.0375" />
+</docsetA>
+</topic>
+<topic id="D0605E" category="1">
+<title> treatment of osteoarthritis </title>
+<docsetA id="D0605E-A">
+<doc id="NYT20000130.0113" />
+<doc id="APW19990420.0246" />
+<doc id="APW20000314.0148" />
+<doc id="NYT19990601.0049" />
+<doc id="APW19990524.0212" />
+<doc id="NYT19981202.0034" />
+<doc id="NYT19991130.0087" />
+<doc id="APW19981110.1263" />
+<doc id="NYT20000926.0123" />
+<doc id="NYT19991122.0260" />
+<doc id="APW19990102.0062" />
+<doc id="APW19980610.1776" />
+<doc id="NYT20000124.0244" />
+<doc id="NYT19980629.0264" />
+<doc id="APW19990318.0145" />
+<doc id="NYT19990802.0355" />
+<doc id="NYT20000313.0388" />
+<doc id="NYT20000131.0294" />
+<doc id="APW20000414.0143" />
+<doc id="NYT19990406.0038" />
+<doc id="NYT19980803.0187" />
+<doc id="APW19980616.1413" />
+<doc id="NYT19990823.0151" />
+<doc id="XIE19991105.0236" />
+<doc id="APW19980603.1001" />
+</docsetA>
+</topic>
+<topic id="D0606F" category="1">
+<title> impacts of global climate change </title>
+<docsetA id="D0606F-A">
+<doc id="XIE19960710.0006" />
+<doc id="XIE19960113.0145" />
+<doc id="XIE20000216.0224" />
+<doc id="NYT19980812.0321" />
+<doc id="XIE19991008.0103" />
+<doc id="APW19990608.0009" />
+<doc id="NYT19990607.0382" />
+<doc id="NYT19991206.0093" />
+<doc id="XIE19980327.0038" />
+<doc id="APW19981112.1510" />
+<doc id="XIE19981104.0056" />
+<doc id="APW19980610.0858" />
+<doc id="XIE19971001.0046" />
+<doc id="XIE19981031.0181" />
+<doc id="APW19991019.0263" />
+<doc id="NYT20000823.0141" />
+<doc id="XIE19960710.0062" />
+<doc id="XIE20000419.0006" />
+<doc id="XIE19961017.0313" />
+<doc id="XIE19971114.0179" />
+<doc id="XIE20000613.0043" />
+<doc id="XIE19971121.0037" />
+<doc id="NYT19990720.0148" />
+<doc id="APW20000830.0162" />
+<doc id="NYT20000831.0237" />
+</docsetA>
+</topic>
+<topic id="D0607G" category="1">
+<title> civil unrest in China </title>
+<docsetA id="D0607G-A">
+<doc id="APW19980829.0129" />
+<doc id="APW19981001.0354" />
+<doc id="XIE19970914.0116" />
+<doc id="APW20000426.0190" />
+<doc id="NYT19990727.0376" />
+<doc id="APW19980907.0166" />
+<doc id="NYT19990226.0362" />
+<doc id="NYT19981111.0118" />
+<doc id="XIE19990813.0120" />
+<doc id="NYT20000406.0556" />
+<doc id="XIE19990527.0171" />
+<doc id="NYT19990905.0100" />
+<doc id="APW19980708.0021" />
+<doc id="APW19980611.0150" />
+<doc id="APW19980906.0128" />
+<doc id="NYT19990327.0141" />
+<doc id="NYT19990722.0220" />
+<doc id="APW19980610.0168" />
+<doc id="NYT19981227.0064" />
+<doc id="APW19981109.0097" />
+<doc id="APW19990829.0043" />
+<doc id="APW19990413.0293" />
+<doc id="XIE19981214.0083" />
+<doc id="APW19990409.0236" />
+<doc id="APW19980630.0763" />
+</docsetA>
+</topic>
+<topic id="D0608H" category="1">
+<title> automobile safety </title>
+<docsetA id="D0608H-A">
+<doc id="XIE19971118.0260" />
+<doc id="APW20000314.0031" />
+<doc id="APW20000430.0034" />
+<doc id="XIE19961027.0137" />
+<doc id="NYT19981105.0062" />
+<doc id="NYT19981105.0052" />
+<doc id="XIE20000113.0202" />
+<doc id="NYT19980807.0238" />
+<doc id="APW20000505.0153" />
+<doc id="APW20000209.0099" />
+<doc id="APW19990408.0121" />
+<doc id="APW19990803.0198" />
+<doc id="APW19990104.0114" />
+<doc id="APW19990603.0163" />
+<doc id="NYT19980613.0002" />
+<doc id="NYT19991014.0318" />
+<doc id="NYT19981105.0076" />
+<doc id="APW20000505.0248" />
+<doc id="APW19990407.0101" />
+<doc id="APW19990603.0019" />
+<doc id="APW19990113.0033" />
+<doc id="NYT19991028.0228" />
+<doc id="NYT20000522.0099" />
+<doc id="NYT19990625.0391" />
+<doc id="APW19990831.0237" />
+</docsetA>
+</topic>
+<topic id="D0609I" category="1">
+<title> Israeli West Bank settlements </title>
+<docsetA id="D0609I-A">
+<doc id="XIE19990926.0108" />
+<doc id="APW19981007.0414" />
+<doc id="XIE19981118.0093" />
+<doc id="APW19981001.0855" />
+<doc id="APW19980812.0617" />
+<doc id="APW19980901.0387" />
+<doc id="XIE19990413.0026" />
+<doc id="XIE19980612.0067" />
+<doc id="XIE19980514.0066" />
+<doc id="XIE19990927.0026" />
+<doc id="XIE19961130.0030" />
+<doc id="XIE19990615.0016" />
+<doc id="XIE19990412.0009" />
+<doc id="APW19981007.0587" />
+<doc id="APW19980605.0329" />
+<doc id="XIE19960802.0077" />
+<doc id="XIE19970216.0018" />
+<doc id="XIE19991013.0051" />
+<doc id="XIE19991014.0156" />
+<doc id="XIE19970405.0039" />
+<doc id="APW19981015.0131" />
+<doc id="XIE19961214.0192" />
+<doc id="XIE19991208.0047" />
+<doc id="XIE19980814.0299" />
+<doc id="XIE19990814.0022" />
+</docsetA>
+</topic>
+<topic id="D0610A" category="1">
+<title> home-schooling pros and cons </title>
+<docsetA id="D0610A-A">
+<doc id="NYT19981028.0507" />
+<doc id="APW19990429.0301" />
+<doc id="NYT19981028.0232" />
+<doc id="NYT19980630.0009" />
+<doc id="NYT20000829.0034" />
+<doc id="NYT19981028.0271" />
+<doc id="APW19990914.0071" />
+<doc id="NYT19980604.0461" />
+<doc id="APW19990727.0091" />
+<doc id="NYT20000822.0111" />
+<doc id="NYT19991214.0116" />
+<doc id="NYT19981216.0367" />
+<doc id="NYT19990924.0237" />
+<doc id="NYT19981028.0267" />
+<doc id="NYT19981028.0277" />
+<doc id="NYT19981028.0220" />
+<doc id="APW20000608.0042" />
+<doc id="NYT19981019.0252" />
+<doc id="NYT19990603.0226" />
+<doc id="NYT20000608.0001" />
+<doc id="APW19990924.0069" />
+<doc id="APW19990706.0098" />
+<doc id="NYT20000802.0124" />
+<doc id="NYT19981025.0058" />
+<doc id="NYT20000926.0313" />
+</docsetA>
+</topic>
+<topic id="D0611B" category="1">
+<title> organic methods of pest control </title>
+<docsetA id="D0611B-A">
+<doc id="NYT19990623.0175" />
+<doc id="NYT19990514.0215" />
+<doc id="NYT20000321.0067" />
+<doc id="XIE19980322.0148" />
+<doc id="XIE20000517.0308" />
+<doc id="APW20000516.0007" />
+<doc id="NYT19990416.0164" />
+<doc id="XIE20000822.0100" />
+<doc id="NYT20000119.0262" />
+<doc id="NYT19990517.0090" />
+<doc id="NYT19990526.0124" />
+<doc id="NYT20000705.0134" />
+<doc id="NYT19990526.0008" />
+<doc id="NYT19991020.0417" />
+<doc id="NYT19980715.0251" />
+<doc id="NYT19990402.0215" />
+<doc id="XIE19960618.0267" />
+<doc id="NYT19990804.0259" />
+<doc id="NYT19991019.0266" />
+<doc id="NYT19990713.0274" />
+<doc id="APW19990713.0135" />
+<doc id="NYT19990427.0197" />
+<doc id="NYT19991020.0263" />
+<doc id="NYT20000411.0281" />
+<doc id="APW20000723.0041" />
+</docsetA>
+</topic>
+<topic id="D0612C" category="1">
+<title> recent developments and theories regarding autism </title>
+<docsetA id="D0612C-A">
+<doc id="APW20000717.0125" />
+<doc id="NYT19990125.0212" />
+<doc id="NYT19991115.0263" />
+<doc id="XIE19961027.0152" />
+<doc id="NYT20000814.0187" />
+<doc id="NYT19991115.0266" />
+<doc id="NYT19991212.0133" />
+<doc id="NYT20000406.0458" />
+<doc id="NYT19991115.0268" />
+<doc id="NYT19991208.0262" />
+<doc id="NYT19991115.0267" />
+<doc id="NYT20000703.0385" />
+<doc id="NYT19991211.0251" />
+<doc id="NYT19980624.0495" />
+<doc id="NYT20000503.0304" />
+<doc id="NYT19991115.0270" />
+<doc id="APW20000504.0064" />
+<doc id="NYT19991115.0217" />
+<doc id="NYT20000505.0283" />
+<doc id="APW19981110.0192" />
+<doc id="NYT20000418.0326" />
+<doc id="NYT19991227.0229" />
+<doc id="NYT19991208.0364" />
+<doc id="APW20000418.0210" />
+<doc id="NYT19981030.0096" />
+</docsetA>
+</topic>
+<topic id="D0613D" category="1">
+<title> perceptions of Generation X </title>
+<docsetA id="D0613D-A">
+<doc id="NYT20000726.0150" />
+<doc id="APW20000910.0042" />
+<doc id="NYT20000419.0397" />
+<doc id="NYT19990105.0240" />
+<doc id="NYT19980730.0391" />
+<doc id="NYT19981026.0094" />
+<doc id="NYT20000630.0457" />
+<doc id="NYT20000502.0252" />
+<doc id="NYT20000506.0218" />
+<doc id="NYT19990727.0132" />
+<doc id="NYT20000524.0235" />
+<doc id="NYT19981014.0207" />
+<doc id="NYT19991111.0014" />
+<doc id="APW19990419.0174" />
+<doc id="APW20000206.0154" />
+<doc id="NYT19990111.0062" />
+<doc id="APW19980609.1263" />
+<doc id="NYT20000711.0249" />
+<doc id="NYT19980617.0157" />
+<doc id="NYT19990615.0370" />
+<doc id="NYT19990319.0090" />
+<doc id="NYT19980623.0167" />
+<doc id="APW19990127.0033" />
+<doc id="NYT19991020.0365" />
+<doc id="NYT20000920.0397" />
+</docsetA>
+</topic>
+<topic id="D0614E" category="1">
+<title> Quebec independence </title>
+<docsetA id="D0614E-A">
+<doc id="NYT19981126.0139" />
+<doc id="XIE19970515.0060" />
+<doc id="NYT19981201.0377" />
+<doc id="APW19981201.1124" />
+<doc id="NYT19981129.0115" />
+<doc id="XIE19970828.0056" />
+<doc id="XIE19980820.0106" />
+<doc id="XIE20000314.0067" />
+<doc id="XIE19971002.0008" />
+<doc id="XIE19960515.0074" />
+<doc id="NYT19981128.0177" />
+<doc id="NYT19991218.0119" />
+<doc id="XIE19981201.0180" />
+<doc id="XIE19970829.0074" />
+<doc id="NYT19981122.0106" />
+<doc id="APW19980624.1362" />
+<doc id="NYT19980820.0359" />
+<doc id="XIE19971015.0013" />
+<doc id="NYT19981201.0033" />
+<doc id="APW19990904.0170" />
+<doc id="NYT19991206.0017" />
+<doc id="XIE19980217.0058" />
+<doc id="APW19981122.0357" />
+<doc id="XIE19960113.0197" />
+<doc id="APW19980821.0119" />
+</docsetA>
+</topic>
+<topic id="D0615F" category="1">
+<title> evolution/creationism debate </title>
+<docsetA id="D0615F-A">
+<doc id="NYT19991130.0409" />
+<doc id="NYT19991126.0269" />
+<doc id="APW20000619.0011" />
+<doc id="APW20000927.0032" />
+<doc id="NYT19990828.0021" />
+<doc id="APW19990326.0304" />
+<doc id="NYT20000418.0045" />
+<doc id="NYT19990824.0307" />
+<doc id="NYT19991008.0232" />
+<doc id="NYT19990702.0222" />
+<doc id="NYT20000814.0068" />
+<doc id="NYT19990513.0012" />
+<doc id="NYT19990520.0008" />
+<doc id="NYT19990830.0274" />
+<doc id="NYT20000723.0019" />
+<doc id="NYT20000424.0143" />
+<doc id="NYT19991011.0350" />
+<doc id="NYT19991127.0159" />
+<doc id="NYT19981123.0235" />
+<doc id="NYT19990508.0165" />
+<doc id="NYT19990812.0015" />
+<doc id="NYT19990828.0134" />
+<doc id="NYT19990511.0020" />
+<doc id="NYT19991009.0071" />
+<doc id="APW20000926.0187" />
+</docsetA>
+</topic>
+<topic id="D0616G" category="1">
+<title> terrorist attacks in Chechnya </title>
+<docsetA id="D0616G-A">
+<doc id="APW20000417.0152" />
+<doc id="XIE19991103.0103" />
+<doc id="NYT19990930.0255" />
+<doc id="XIE19991015.0535" />
+<doc id="APW19991101.0048" />
+<doc id="APW19990925.0052" />
+<doc id="XIE19990925.0033" />
+<doc id="XIE19960331.0033" />
+<doc id="XIE19991019.0141" />
+<doc id="APW19991012.0112" />
+<doc id="XIE20000325.0044" />
+<doc id="XIE20000706.0068" />
+<doc id="APW19991012.0111" />
+<doc id="XIE20000705.0050" />
+<doc id="XIE20000704.0145" />
+<doc id="XIE19991018.0031" />
+<doc id="XIE20000503.0214" />
+<doc id="XIE20000720.0078" />
+<doc id="XIE19970301.0264" />
+<doc id="APW19980727.0609" />
+<doc id="XIE20000704.0008" />
+<doc id="XIE20000703.0122" />
+<doc id="XIE20000703.0159" />
+<doc id="XIE20000512.0127" />
+<doc id="XIE19991215.0063" />
+</docsetA>
+</topic>
+<topic id="D0617H" category="1">
+<title> EgyptAir Flight 990 </title>
+<docsetA id="D0617H-A">
+<doc id="NYT19991112.0315" />
+<doc id="NYT20000411.0395" />
+<doc id="XIE19991117.0007" />
+<doc id="NYT19991109.0379" />
+<doc id="NYT19991115.0260" />
+<doc id="XIE19991102.0164" />
+<doc id="APW20000208.0168" />
+<doc id="NYT19991122.0225" />
+<doc id="XIE20000916.0010" />
+<doc id="APW20000811.0039" />
+<doc id="XIE19991111.0027" />
+<doc id="APW20000121.0318" />
+<doc id="NYT19991110.0501" />
+<doc id="NYT19991103.0509" />
+<doc id="XIE19991109.0095" />
+<doc id="NYT20000811.0429" />
+<doc id="APW20000306.0169" />
+<doc id="XIE20000813.0026" />
+<doc id="XIE20000812.0030" />
+<doc id="XIE19991116.0318" />
+<doc id="XIE20000817.0036" />
+<doc id="NYT20000121.0371" />
+<doc id="APW19991031.0036" />
+<doc id="XIE19991101.0310" />
+<doc id="XIE20000815.0130" />
+</docsetA>
+</topic>
+<topic id="D0618I" category="1">
+<title> malaria prevention and treatment </title>
+<docsetA id="D0618I-A">
+<doc id="XIE19970611.0094" />
+<doc id="XIE20000408.0022" />
+<doc id="XIE19991012.0071" />
+<doc id="APW20000714.0141" />
+<doc id="XIE19980608.0052" />
+<doc id="XIE19961026.0030" />
+<doc id="XIE19980625.0370" />
+<doc id="XIE19981031.0215" />
+<doc id="XIE19961126.0009" />
+<doc id="XIE20000329.0020" />
+<doc id="NYT20000424.0157" />
+<doc id="XIE19971117.0016" />
+<doc id="XIE19981228.0010" />
+<doc id="NYT19990712.0410" />
+<doc id="XIE19980611.0029" />
+<doc id="NYT19980928.0229" />
+<doc id="XIE19970605.0031" />
+<doc id="XIE19980825.0071" />
+<doc id="XIE19970128.0164" />
+<doc id="XIE19971126.0211" />
+<doc id="NYT19981030.0262" />
+<doc id="APW19990216.0190" />
+<doc id="APW19990215.0138" />
+<doc id="XIE19980503.0011" />
+<doc id="XIE19990805.0086" />
+</docsetA>
+</topic>
+<topic id="D0619A" category="1">
+<title> gays and the GOP </title>
+<docsetA id="D0619A-A">
+<doc id="NYT19980831.0132" />
+<doc id="NYT19980804.0231" />
+<doc id="NYT19991208.0267" />
+<doc id="NYT19980813.0058" />
+<doc id="NYT19980714.0366" />
+<doc id="NYT19981028.0197" />
+<doc id="NYT19990810.0271" />
+<doc id="NYT20000801.0328" />
+<doc id="APW20000913.0103" />
+<doc id="NYT20000128.0018" />
+<doc id="NYT19981028.0094" />
+<doc id="NYT19980709.0048" />
+<doc id="NYT19991222.0474" />
+<doc id="NYT20000801.0370" />
+<doc id="NYT20000725.0244" />
+<doc id="NYT20000803.0316" />
+<doc id="NYT20000116.0102" />
+<doc id="NYT19980723.0344" />
+<doc id="APW19990112.0263" />
+<doc id="NYT20000727.0344" />
+<doc id="NYT20000410.0227" />
+<doc id="NYT19990811.0457" />
+<doc id="NYT19981210.0354" />
+<doc id="NYT20000427.0367" />
+<doc id="NYT19980915.0001" />
+</docsetA>
+</topic>
+<topic id="D0620B" category="1">
+<title> school violence prevention measures </title>
+<docsetA id="D0620B-A">
+<doc id="NYT19980728.0165" />
+<doc id="NYT19990825.0010" />
+<doc id="APW19990214.0049" />
+<doc id="APW19990811.0273" />
+<doc id="NYT19990520.0532" />
+<doc id="NYT19990312.0129" />
+<doc id="APW19990516.0119" />
+<doc id="NYT19990421.0467" />
+<doc id="NYT19990812.0385" />
+<doc id="NYT19990520.0349" />
+<doc id="APW20000419.0041" />
+<doc id="APW19990321.0046" />
+<doc id="APW19990522.0129" />
+<doc id="NYT20000227.0024" />
+<doc id="APW19990421.0124" />
+<doc id="NYT19990812.0366" />
+<doc id="NYT19990502.0213" />
+<doc id="APW19990809.0118" />
+<doc id="NYT19990810.0187" />
+<doc id="APW19991022.0057" />
+<doc id="APW20000222.0283" />
+<doc id="NYT19990810.0197" />
+<doc id="APW20000503.0175" />
+<doc id="NYT20000412.0090" />
+<doc id="NYT19990525.0233" />
+</docsetA>
+</topic>
+<topic id="D0621C" category="1">
+<title> crime and law enforcement in China </title>
+<docsetA id="D0621C-A">
+<doc id="XIE19960916.0097" />
+<doc id="XIE19991123.0134" />
+<doc id="APW19980712.0183" />
+<doc id="APW19980723.0080" />
+<doc id="XIE19991125.0109" />
+<doc id="XIE19970501.0111" />
+<doc id="APW19981126.0014" />
+<doc id="XIE19981103.0140" />
+<doc id="XIE19961213.0115" />
+<doc id="XIE19970331.0199" />
+<doc id="APW19981023.0079" />
+<doc id="APW19980710.0418" />
+<doc id="XIE19960502.0059" />
+<doc id="NYT19991123.0318" />
+<doc id="APW19981113.0102" />
+<doc id="APW19981024.0097" />
+<doc id="NYT19980802.0073" />
+<doc id="APW19980908.0396" />
+<doc id="APW19980608.0653" />
+<doc id="XIE19960516.0035" />
+<doc id="XIE19970507.0217" />
+<doc id="APW19980826.0780" />
+<doc id="XIE19960523.0013" />
+<doc id="XIE19991209.0072" />
+<doc id="XIE19980902.0226" />
+</docsetA>
+</topic>
+<topic id="D0622D" category="1">
+<title> spread of the West Nile virus </title>
+<docsetA id="D0622D-A">
+<doc id="APW19990930.0287" />
+<doc id="APW20000815.0088" />
+<doc id="APW19991005.0216" />
+<doc id="NYT20000427.0381" />
+<doc id="NYT20000802.0490" />
+<doc id="NYT20000823.0123" />
+<doc id="NYT20000731.0113" />
+<doc id="NYT20000804.0238" />
+<doc id="NYT19990928.0283" />
+<doc id="APW20000927.0225" />
+<doc id="NYT19990927.0336" />
+<doc id="NYT20000707.0089" />
+<doc id="APW20000801.0128" />
+<doc id="APW20000726.0146" />
+<doc id="APW20000609.0184" />
+<doc id="NYT20000731.0477" />
+<doc id="NYT20000727.0096" />
+<doc id="APW20000922.0203" />
+<doc id="APW19990927.0352" />
+<doc id="APW20000824.0134" />
+<doc id="APW20000724.0151" />
+<doc id="APW20000117.0013" />
+<doc id="NYT20000120.0268" />
+<doc id="NYT20000810.0247" />
+<doc id="APW20000803.0144" />
+</docsetA>
+</topic>
+<topic id="D0623E" category="1">
+<title> anti-smoking laws </title>
+<docsetA id="D0623E-A">
+<doc id="NYT19980625.0316" />
+<doc id="APW19981112.1465" />
+<doc id="APW20000118.0243" />
+<doc id="XIE19980601.0145" />
+<doc id="APW20000904.0064" />
+<doc id="XIE20000901.0290" />
+<doc id="XIE19960731.0134" />
+<doc id="XIE19980206.0051" />
+<doc id="XIE19960509.0162" />
+<doc id="APW19981211.1557" />
+<doc id="XIE19980531.0044" />
+<doc id="XIE19960716.0223" />
+<doc id="APW19981104.0955" />
+<doc id="APW19981023.0475" />
+<doc id="APW19980708.0324" />
+<doc id="NYT19990112.0017" />
+<doc id="XIE19970530.0090" />
+<doc id="XIE19960514.0111" />
+<doc id="APW20000118.0171" />
+<doc id="XIE19960515.0075" />
+<doc id="XIE19980103.0120" />
+<doc id="XIE19960525.0191" />
+<doc id="XIE19971030.0104" />
+<doc id="APW19981211.1561" />
+<doc id="XIE19980606.0057" />
+</docsetA>
+</topic>
+<topic id="D0624F" category="1">
+<title> Stephen Lawrence </title>
+<docsetA id="D0624F-A">
+<doc id="NYT19990224.0374" />
+<doc id="XIE20000907.0311" />
+<doc id="XIE19990227.0012" />
+<doc id="XIE20000322.0316" />
+<doc id="APW19990426.0231" />
+<doc id="NYT19990222.0255" />
+<doc id="XIE19990225.0299" />
+<doc id="NYT19990226.0074" />
+<doc id="APW19990224.0005" />
+<doc id="XIE19990610.0042" />
+<doc id="APW20000814.0072" />
+<doc id="XIE19990324.0305" />
+<doc id="XIE19980701.0203" />
+<doc id="APW19981001.0337" />
+<doc id="APW20000629.0059" />
+<doc id="NYT19990221.0128" />
+<doc id="XIE19990420.0040" />
+<doc id="APW19980701.0953" />
+<doc id="APW19980617.1094" />
+<doc id="XIE19990302.0306" />
+<doc id="NYT19990311.0048" />
+<doc id="APW20000322.0239" />
+<doc id="XIE19990708.0054" />
+<doc id="XIE19990414.0086" />
+<doc id="XIE19990422.0410" />
+</docsetA>
+</topic>
+<topic id="D0625G" category="1">
+<title> types of diseases in Kenya </title>
+<docsetA id="D0625G-A">
+<doc id="XIE19991111.0211" />
+<doc id="XIE19960402.0018" />
+<doc id="XIE19971023.0237" />
+<doc id="XIE19990309.0208" />
+<doc id="XIE19981214.0217" />
+<doc id="XIE19971224.0188" />
+<doc id="XIE20000311.0135" />
+<doc id="XIE19970617.0093" />
+<doc id="XIE19971204.0199" />
+<doc id="XIE20000505.0184" />
+<doc id="XIE19990311.0279" />
+<doc id="XIE19990729.0177" />
+<doc id="XIE19980522.0214" />
+<doc id="XIE19970609.0083" />
+<doc id="XIE19961106.0029" />
+<doc id="XIE19960402.0154" />
+<doc id="XIE19960212.0008" />
+<doc id="XIE19960124.0193" />
+<doc id="XIE19960331.0087" />
+<doc id="XIE19980206.0025" />
+<doc id="XIE19970729.0016" />
+<doc id="XIE19960427.0050" />
+<doc id="XIE19980114.0245" />
+<doc id="XIE20000125.0234" />
+<doc id="XIE19991109.0154" />
+</docsetA>
+</topic>
+<topic id="D0626H" category="1">
+<title> bombing of US embassies in Africa </title>
+<docsetA id="D0626H-A">
+<doc id="XIE19990203.0316" />
+<doc id="APW19980905.0175" />
+<doc id="APW19980911.0475" />
+<doc id="APW19980809.0700" />
+<doc id="APW19980918.0499" />
+<doc id="APW19980829.0400" />
+<doc id="NYT19980921.0407" />
+<doc id="APW19980812.0364" />
+<doc id="APW19980919.0259" />
+<doc id="XIE19980814.0294" />
+<doc id="APW19980921.1222" />
+<doc id="APW19980827.0108" />
+<doc id="APW19981102.0645" />
+<doc id="APW19981014.0369" />
+<doc id="NYT19980815.0088" />
+<doc id="NYT19981216.0425" />
+<doc id="APW19980905.0195" />
+<doc id="XIE19980828.0002" />
+<doc id="APW19981016.0553" />
+<doc id="XIE19980821.0157" />
+<doc id="APW19980826.0389" />
+<doc id="APW19980813.0083" />
+<doc id="APW19980816.0171" />
+<doc id="APW19980926.0248" />
+<doc id="APW19981005.0139" />
+</docsetA>
+</topic>
+<topic id="D0627I" category="1">
+<title> international adoption </title>
+<docsetA id="D0627I-A">
+<doc id="NYT20000725.0381" />
+<doc id="XIE19980828.0070" />
+<doc id="NYT19981110.0250" />
+<doc id="NYT20000502.0109" />
+<doc id="APW19980627.0401" />
+<doc id="NYT19981110.0218" />
+<doc id="NYT20000719.0113" />
+<doc id="NYT20000801.0456" />
+<doc id="XIE19960127.0124" />
+<doc id="NYT20000718.0312" />
+<doc id="APW19981104.0589" />
+<doc id="NYT19990908.0098" />
+<doc id="APW20000718.0074" />
+<doc id="NYT20000515.0117" />
+<doc id="XIE19960127.0123" />
+<doc id="XIE19960115.0256" />
+<doc id="APW19981203.1146" />
+<doc id="XIE19970227.0288" />
+<doc id="APW19991007.0017" />
+<doc id="APW20000727.0108" />
+<doc id="APW19980724.0883" />
+<doc id="NYT19990911.0194" />
+<doc id="XIE19980824.0156" />
+<doc id="NYT19981026.0272" />
+<doc id="NYT20000515.0223" />
+</docsetA>
+</topic>
+<topic id="D0628A" category="1">
+<title> ADD/ADHD diagnosis and treatment </title>
+<docsetA id="D0628A-A">
+<doc id="NYT19991130.0061" />
+<doc id="NYT19991130.0048" />
+<doc id="APW19981111.1507" />
+<doc id="APW19990114.0228" />
+<doc id="NYT19991216.0157" />
+<doc id="NYT19990217.0203" />
+<doc id="APW20000829.0155" />
+<doc id="APW19990802.0178" />
+<doc id="NYT19981116.0311" />
+<doc id="APW19991025.0141" />
+<doc id="NYT19990624.0113" />
+<doc id="NYT19991231.0079" />
+<doc id="APW20000502.0037" />
+<doc id="NYT20000801.0454" />
+<doc id="NYT20000612.0803" />
+<doc id="APW20000909.0073" />
+<doc id="NYT20000321.0103" />
+<doc id="NYT19991216.0289" />
+<doc id="APW20000505.0069" />
+<doc id="NYT20000925.0105" />
+<doc id="APW20000816.0148" />
+<doc id="APW20000915.0131" />
+<doc id="APW19990901.0073" />
+<doc id="NYT20000518.0153" />
+<doc id="NYT20000511.0238" />
+</docsetA>
+</topic>
+<topic id="D0629B" category="1">
+<title> computer viruses </title>
+<docsetA id="D0629B-A">
+<doc id="APW19990327.0116" />
+<doc id="APW19990429.0233" />
+<doc id="XIE19960820.0033" />
+<doc id="APW19990330.0202" />
+<doc id="NYT19990331.0219" />
+<doc id="XIE19991207.0186" />
+<doc id="APW19990424.0095" />
+<doc id="XIE19991216.0330" />
+<doc id="XIE20000509.0208" />
+<doc id="APW19990402.0084" />
+<doc id="APW19990611.0152" />
+<doc id="XIE20000521.0064" />
+<doc id="APW19990614.0088" />
+<doc id="NYT19990224.0110" />
+<doc id="APW19990819.0086" />
+<doc id="APW19990408.0163" />
+<doc id="NYT19991216.0001" />
+<doc id="XIE19980703.0240" />
+<doc id="APW19990427.0312" />
+<doc id="XIE19970416.0059" />
+<doc id="NYT19990609.0213" />
+<doc id="XIE19991227.0024" />
+<doc id="APW19990430.0209" />
+<doc id="NYT19990402.0334" />
+<doc id="NYT19990303.0119" />
+</docsetA>
+</topic>
+<topic id="D0630C" category="1">
+<title> bookselling </title>
+<docsetA id="D0630C-A">
+<doc id="APW19990408.0277" />
+<doc id="APW19990428.0042" />
+<doc id="APW19990215.0082" />
+<doc id="NYT20000604.0036" />
+<doc id="NYT19990815.0059" />
+<doc id="NYT19981210.0145" />
+<doc id="APW19990502.0037" />
+<doc id="NYT19990404.0068" />
+<doc id="NYT20000210.0115" />
+<doc id="APW20000604.0057" />
+<doc id="NYT19990519.0062" />
+<doc id="NYT19991215.0153" />
+<doc id="NYT20000604.0062" />
+<doc id="NYT19981117.0376" />
+<doc id="APW19990602.0201" />
+<doc id="NYT19980820.0433" />
+<doc id="APW19990714.0182" />
+<doc id="NYT19990503.0450" />
+<doc id="NYT19980608.0099" />
+<doc id="NYT19990601.0014" />
+<doc id="NYT19990314.0087" />
+<doc id="NYT19991213.0443" />
+<doc id="APW19990502.0047" />
+<doc id="NYT19990502.0064" />
+<doc id="NYT19990113.0198" />
+</docsetA>
+</topic>
+<topic id="D0631D" category="1">
+<title> crash of the Air France Concorde </title>
+<docsetA id="D0631D-A">
+<doc id="APW20000802.0124" />
+<doc id="NYT20000816.0143" />
+<doc id="NYT20000904.0165" />
+<doc id="APW20000801.0147" />
+<doc id="APW20000803.0089" />
+<doc id="NYT20000726.0252" />
+<doc id="NYT20000818.0297" />
+<doc id="APW20000725.0086" />
+<doc id="APW20000727.0042" />
+<doc id="APW20000726.0083" />
+<doc id="NYT20000927.0218" />
+<doc id="APW20000818.0084" />
+<doc id="APW20000807.0044" />
+<doc id="NYT20000730.0079" />
+<doc id="NYT20000726.0316" />
+<doc id="APW20000819.0027" />
+<doc id="NYT20000901.0200" />
+<doc id="NYT20000726.0198" />
+<doc id="NYT20000810.0190" />
+<doc id="APW20000826.0078" />
+<doc id="APW20000901.0020" />
+<doc id="NYT20000727.0241" />
+<doc id="NYT20000729.0074" />
+<doc id="APW20000816.0115" />
+<doc id="APW20000725.0129" />
+</docsetA>
+</topic>
+<topic id="D0632E" category="1">
+<title> Mongolia's foreign relations </title>
+<docsetA id="D0632E-A">
+<doc id="XIE19970413.0044" />
+<doc id="XIE20000424.0060" />
+<doc id="XIE19980314.0033" />
+<doc id="XIE19960430.0101" />
+<doc id="XIE19990623.0052" />
+<doc id="XIE19971114.0203" />
+<doc id="XIE19990710.0052" />
+<doc id="XIE19970404.0151" />
+<doc id="XIE19970326.0141" />
+<doc id="XIE19960417.0087" />
+<doc id="XIE19960327.0075" />
+<doc id="XIE19960113.0134" />
+<doc id="XIE19970721.0066" />
+<doc id="XIE19980508.0141" />
+<doc id="XIE19980502.0084" />
+<doc id="XIE19970127.0071" />
+<doc id="XIE19960319.0079" />
+<doc id="XIE19960328.0095" />
+<doc id="XIE20000425.0125" />
+<doc id="XIE19970717.0221" />
+<doc id="XIE19970222.0096" />
+<doc id="XIE19960501.0024" />
+<doc id="XIE19960831.0125" />
+<doc id="XIE19980922.0196" />
+<doc id="XIE20000117.0055" />
+</docsetA>
+</topic>
+<topic id="D0633F" category="1">
+<title> U.S. crime trends </title>
+<docsetA id="D0633F-A">
+<doc id="XIE19990103.0001" />
+<doc id="XIE19990321.0010" />
+<doc id="NYT19991027.0470" />
+<doc id="XIE19971116.0178" />
+<doc id="NYT19991229.0362" />
+<doc id="NYT19990907.0202" />
+<doc id="XIE19991018.0243" />
+<doc id="NYT19980905.0123" />
+<doc id="XIE19960507.0160" />
+<doc id="NYT20000821.0488" />
+<doc id="NYT20000821.0495" />
+<doc id="XIE19980203.0160" />
+<doc id="NYT20000827.0101" />
+<doc id="APW20000622.0058" />
+<doc id="NYT19990308.0104" />
+<doc id="NYT19990209.0261" />
+<doc id="NYT19990227.0091" />
+<doc id="NYT20000705.0333" />
+<doc id="NYT19990406.0403" />
+<doc id="NYT19980609.0103" />
+<doc id="NYT19990429.0509" />
+<doc id="APW19990818.0274" />
+<doc id="NYT20000828.0169" />
+<doc id="APW19990101.0029" />
+<doc id="NYT19981120.0241" />
+</docsetA>
+</topic>
+<topic id="D0634G" category="1">
+<title> Pacific salmon conservation </title>
+<docsetA id="D0634G-A">
+<doc id="NYT19991003.0465" />
+<doc id="NYT19990401.0289" />
+<doc id="APW19990421.0243" />
+<doc id="XIE19970524.0059" />
+<doc id="APW19990608.0009" />
+<doc id="NYT19990607.0382" />
+<doc id="XIE19990604.0268" />
+<doc id="NYT19980615.0169" />
+<doc id="APW20000111.0025" />
+<doc id="NYT19990706.0364" />
+<doc id="NYT19990419.0272" />
+<doc id="NYT19991109.0031" />
+<doc id="NYT19980610.0197" />
+<doc id="NYT19990609.0381" />
+<doc id="APW20000402.0019" />
+<doc id="NYT20000505.0326" />
+<doc id="NYT19990607.0501" />
+<doc id="NYT19990314.0080" />
+<doc id="XIE19980313.0049" />
+<doc id="XIE19970910.0053" />
+<doc id="NYT19990317.0521" />
+<doc id="NYT19990317.0480" />
+<doc id="APW20000204.0300" />
+<doc id="NYT20000218.0336" />
+<doc id="XIE19990701.0055" />
+</docsetA>
+</topic>
+<topic id="D0635H" category="1">
+<title> capital punishment in Texas during Governor Bush's administration </title>
+<docsetA id="D0635H-A">
+<doc id="APW19990817.0190" />
+<doc id="NYT20000616.0303" />
+<doc id="NYT19980626.0365" />
+<doc id="APW20000622.0207" />
+<doc id="NYT20000301.0030" />
+<doc id="NYT20000616.0068" />
+<doc id="NYT20000106.0324" />
+<doc id="NYT20000621.0297" />
+<doc id="NYT20000623.0132" />
+<doc id="NYT19990813.0258" />
+<doc id="NYT19990817.0313" />
+<doc id="NYT19981210.0497" />
+<doc id="NYT19991220.0099" />
+<doc id="NYT20000124.0292" />
+<doc id="NYT19981214.0190" />
+<doc id="NYT20000620.0366" />
+<doc id="NYT20000601.0395" />
+<doc id="NYT19990201.0195" />
+<doc id="NYT20000515.0120" />
+<doc id="NYT20000526.0340" />
+<doc id="NYT20000621.0298" />
+<doc id="NYT19990601.0364" />
+<doc id="APW20000912.0072" />
+<doc id="NYT20000531.0378" />
+<doc id="NYT19990817.0328" />
+</docsetA>
+</topic>
+<topic id="D0636I" category="1">
+<title> issues between the UAW and American automobile manufacturers </title>
+<docsetA id="D0636I-A">
+<doc id="APW19990329.0238" />
+<doc id="APW19990928.0200" />
+<doc id="NYT19980708.0375" />
+<doc id="APW19990616.0158" />
+<doc id="APW19990916.0233" />
+<doc id="NYT19980623.0462" />
+<doc id="APW19991011.0253" />
+<doc id="NYT19990608.0350" />
+<doc id="NYT19980622.0509" />
+<doc id="NYT19980803.0478" />
+<doc id="APW19990328.0015" />
+<doc id="NYT19980610.0480" />
+<doc id="NYT19980611.0313" />
+<doc id="APW19990613.0006" />
+<doc id="NYT19980805.0424" />
+<doc id="APW19990510.0037" />
+<doc id="APW19991009.0142" />
+<doc id="APW19990614.0287" />
+<doc id="APW19991009.0094" />
+<doc id="APW19990813.0046" />
+<doc id="NYT19990824.0343" />
+<doc id="APW19990929.0160" />
+<doc id="APW19991011.0059" />
+<doc id="NYT19980728.0376" />
+<doc id="NYT19980709.0434" />
+</docsetA>
+</topic>
+<topic id="D0637A" category="1">
+<title> solar energy around the world </title>
+<docsetA id="D0637A-A">
+<doc id="XIE19960425.0235" />
+<doc id="XIE19960607.0044" />
+<doc id="XIE19970227.0292" />
+<doc id="XIE19970817.0152" />
+<doc id="XIE19971105.0290" />
+<doc id="XIE19980707.0270" />
+<doc id="NYT20000825.0308" />
+<doc id="XIE19960807.0230" />
+<doc id="XIE19990916.0260" />
+<doc id="XIE19971112.0011" />
+<doc id="XIE20000125.0310" />
+<doc id="XIE19970226.0304" />
+<doc id="XIE19980131.0086" />
+<doc id="XIE19960822.0149" />
+<doc id="XIE19960918.0266" />
+<doc id="XIE20000227.0157" />
+<doc id="XIE19990602.0040" />
+<doc id="XIE19980916.0234" />
+<doc id="XIE19991011.0211" />
+<doc id="APW19980611.1707" />
+<doc id="XIE19960815.0065" />
+<doc id="XIE20000510.0293" />
+<doc id="XIE19971030.0175" />
+<doc id="XIE19970223.0128" />
+<doc id="XIE19980216.0219" />
+</docsetA>
+</topic>
+<topic id="D0638B" category="1">
+<title> NASA's Galileo Mission </title>
+<docsetA id="D0638B-A">
+<doc id="NYT19990916.0329" />
+<doc id="APW19981013.1191" />
+<doc id="NYT20000201.0102" />
+<doc id="XIE19960626.0071" />
+<doc id="APW19980915.1260" />
+<doc id="XIE19960507.0253" />
+<doc id="APW20000103.0258" />
+<doc id="APW19990603.0300" />
+<doc id="NYT19981022.0084" />
+<doc id="NYT19980925.0136" />
+<doc id="APW19991017.0082" />
+<doc id="APW19980702.1200" />
+<doc id="APW19991011.0023" />
+<doc id="APW19990201.0225" />
+<doc id="NYT19981208.0128" />
+<doc id="NYT19980722.0258" />
+<doc id="APW19991011.0106" />
+<doc id="NYT20000131.0361" />
+<doc id="APW20000110.0304" />
+<doc id="NYT19991117.0302" />
+<doc id="APW19990212.0276" />
+<doc id="NYT20000214.0296" />
+<doc id="APW19981106.1139" />
+<doc id="XIE19960123.0253" />
+<doc id="XIE19960320.0085" />
+</docsetA>
+</topic>
+<topic id="D0639C" category="1">
+<title> precursor chemicals for weapons of mass destruction (WMDs) </title>
+<docsetA id="D0639C-A">
+<doc id="NYT19980824.0437" />
+<doc id="NYT19980827.0554" />
+<doc id="NYT19980825.0228" />
+<doc id="NYT19990415.0473" />
+<doc id="NYT19980820.0518" />
+<doc id="APW20000731.0152" />
+<doc id="NYT19980826.0487" />
+<doc id="NYT19980828.0350" />
+<doc id="APW19980928.1099" />
+<doc id="APW19980825.0900" />
+<doc id="NYT19990208.0384" />
+<doc id="NYT19981006.0384" />
+<doc id="APW19980929.1151" />
+<doc id="APW19981027.1042" />
+<doc id="NYT19980823.0041" />
+<doc id="APW19980901.0582" />
+<doc id="NYT19980825.0246" />
+<doc id="XIE19990210.0008" />
+<doc id="APW20000414.0260" />
+<doc id="NYT19990824.0332" />
+<doc id="APW20000630.0219" />
+<doc id="APW19981202.1098" />
+<doc id="XIE19960823.0228" />
+<doc id="XIE19980826.0044" />
+<doc id="APW19981119.0667" />
+</docsetA>
+</topic>
+<topic id="D0640D" category="1">
+<title> Kursk disaster </title>
+<docsetA id="D0640D-A">
+<doc id="XIE20000816.0238" />
+<doc id="APW20000927.0118" />
+<doc id="APW20000829.0054" />
+<doc id="APW20000819.0058" />
+<doc id="NYT20000815.0170" />
+<doc id="XIE20000819.0011" />
+<doc id="APW20000911.0045" />
+<doc id="XIE20000915.0045" />
+<doc id="XIE20000817.0011" />
+<doc id="XIE20000818.0198" />
+<doc id="APW20000904.0139" />
+<doc id="NYT20000906.0274" />
+<doc id="XIE20000821.0070" />
+<doc id="APW20000826.0063" />
+<doc id="NYT20000821.0468" />
+<doc id="NYT20000815.0258" />
+<doc id="XIE20000819.0014" />
+<doc id="APW20000814.0117" />
+<doc id="NYT20000828.0402" />
+<doc id="APW20000817.0101" />
+<doc id="XIE20000814.0065" />
+<doc id="APW20000919.0067" />
+<doc id="XIE20000820.0115" />
+<doc id="XIE20000817.0031" />
+<doc id="XIE20000821.0156" />
+</docsetA>
+</topic>
+<topic id="D0641E" category="1">
+<title> global warming </title>
+<docsetA id="D0641E-A">
+<doc id="XIE19981002.0059" />
+<doc id="NYT19981105.0137" />
+<doc id="NYT20000228.0343" />
+<doc id="XIE19990111.0113" />
+<doc id="NYT20000110.0185" />
+<doc id="XIE19980527.0211" />
+<doc id="XIE19991008.0103" />
+<doc id="NYT19990607.0382" />
+<doc id="XIE19960709.0072" />
+<doc id="XIE19960904.0352" />
+<doc id="APW19990421.0063" />
+<doc id="XIE20000811.0284" />
+<doc id="APW19981112.1510" />
+<doc id="APW19980610.0858" />
+<doc id="NYT19990701.0205" />
+<doc id="XIE19990421.0302" />
+<doc id="XIE19961205.0239" />
+<doc id="APW19980812.1230" />
+<doc id="XIE19990302.0290" />
+<doc id="NYT19990702.0125" />
+<doc id="XIE19960619.0335" />
+<doc id="NYT19990517.0193" />
+<doc id="NYT19990720.0148" />
+<doc id="APW19990502.0005" />
+<doc id="NYT20000831.0237" />
+</docsetA>
+</topic>
+<topic id="D0642F" category="1">
+<title> Hugo Chavez </title>
+<docsetA id="D0642F-A">
+<doc id="XIE19990201.0262" />
+<doc id="XIE19990102.0119" />
+<doc id="XIE19990203.0250" />
+<doc id="APW19981206.1106" />
+<doc id="XIE19990725.0112" />
+<doc id="APW19990704.0124" />
+<doc id="APW19990709.0234" />
+<doc id="APW19981209.1381" />
+<doc id="APW19990507.0083" />
+<doc id="APW20000223.0305" />
+<doc id="APW19981109.0756" />
+<doc id="APW19990504.0255" />
+<doc id="APW19981208.0752" />
+<doc id="APW19990902.0248" />
+<doc id="NYT19981208.0313" />
+<doc id="NYT19990203.0253" />
+<doc id="APW19981212.0984" />
+<doc id="APW19980612.1725" />
+<doc id="NYT19990922.0002" />
+<doc id="XIE19990915.0115" />
+<doc id="XIE20000302.0398" />
+<doc id="XIE19990726.0207" />
+<doc id="XIE19990812.0267" />
+<doc id="NYT19991218.0020" />
+<doc id="XIE19981215.0342" />
+</docsetA>
+</topic>
+<topic id="D0643G" category="1">
+<title> El Nino and La Nina weather condition </title>
+<docsetA id="D0643G-A">
+<doc id="APW20000203.0240" />
+<doc id="NYT19990202.0124" />
+<doc id="APW19990421.0063" />
+<doc id="XIE19971103.0034" />
+<doc id="NYT19990226.0174" />
+<doc id="NYT19990122.0153" />
+<doc id="APW19990630.0175" />
+<doc id="XIE19990716.0061" />
+<doc id="XIE19980706.0107" />
+<doc id="NYT20000925.0218" />
+<doc id="XIE19980521.0226" />
+<doc id="APW19981101.0266" />
+<doc id="XIE19971018.0133" />
+<doc id="APW19990902.0299" />
+<doc id="XIE19971122.0006" />
+<doc id="APW19990901.0157" />
+<doc id="APW19980603.0227" />
+<doc id="XIE19980228.0093" />
+<doc id="XIE19990416.0009" />
+<doc id="XIE20000518.0255" />
+<doc id="APW19990506.0074" />
+<doc id="NYT19980926.0016" />
+<doc id="XIE19970822.0063" />
+<doc id="NYT19981012.0285" />
+<doc id="XIE19971210.0288" />
+</docsetA>
+</topic>
+<topic id="D0644H" category="1">
+<title> federal budget surplus </title>
+<docsetA id="D0644H-A">
+<doc id="XIE19971016.0049" />
+<doc id="NYT19990701.0236" />
+<doc id="APW19990711.0052" />
+<doc id="NYT19990809.0341" />
+<doc id="APW20000818.0128" />
+<doc id="NYT19990813.0333" />
+<doc id="APW20000223.0107" />
+<doc id="APW19990513.0046" />
+<doc id="APW19990202.0112" />
+<doc id="NYT19990201.0308" />
+<doc id="NYT19990128.0325" />
+<doc id="XIE20000223.0326" />
+<doc id="NYT20000908.0015" />
+<doc id="NYT19981012.0332" />
+<doc id="NYT19990806.0128" />
+<doc id="NYT20000217.0202" />
+<doc id="APW20000323.0308" />
+<doc id="NYT19990512.0435" />
+<doc id="APW19980901.0548" />
+<doc id="XIE20000927.0408" />
+<doc id="NYT19990303.0464" />
+<doc id="NYT19990122.0378" />
+<doc id="NYT19990120.0370" />
+<doc id="APW19990302.0308" />
+<doc id="XIE19990729.0058" />
+</docsetA>
+</topic>
+<topic id="D0645I" category="1">
+<title> need for low-income housing </title>
+<docsetA id="D0645I-A">
+<doc id="APW20000328.0057" />
+<doc id="NYT20000912.0208" />
+<doc id="NYT19991115.0339" />
+<doc id="APW19990608.0139" />
+<doc id="APW19990429.0245" />
+<doc id="NYT19981005.0449" />
+<doc id="NYT19981128.0091" />
+<doc id="APW20000920.0128" />
+<doc id="NYT19980818.0379" />
+<doc id="APW20000418.0084" />
+<doc id="NYT19981017.0167" />
+<doc id="NYT19981011.0207" />
+<doc id="NYT19980615.0333" />
+<doc id="NYT19990124.0195" />
+<doc id="APW20000327.0218" />
+<doc id="APW19990621.0089" />
+<doc id="NYT20000327.0288" />
+<doc id="APW19990924.0231" />
+<doc id="NYT20000327.0177" />
+<doc id="NYT19980618.0384" />
+<doc id="NYT19990316.0094" />
+<doc id="NYT19981209.0507" />
+<doc id="NYT20000814.0201" />
+<doc id="NYT19991228.0301" />
+<doc id="NYT19980615.0355" />
+</docsetA>
+</topic>
+<topic id="D0646A" category="1">
+<title> perjury crime and punishment </title>
+<docsetA id="D0646A-A">
+<doc id="APW20000727.0151" />
+<doc id="APW20000622.0027" />
+<doc id="NYT19990113.0324" />
+<doc id="APW19990104.0130" />
+<doc id="APW19990606.0084" />
+<doc id="NYT19990412.0403" />
+<doc id="NYT19990116.0273" />
+<doc id="NYT19980630.0021" />
+<doc id="NYT19981127.0305" />
+<doc id="NYT19991124.0009" />
+<doc id="NYT19981201.0446" />
+<doc id="NYT19981219.0007" />
+<doc id="NYT19990203.0306" />
+<doc id="APW20000414.0254" />
+<doc id="NYT19981130.0375" />
+<doc id="NYT19981209.0404" />
+<doc id="NYT19991105.0292" />
+<doc id="NYT19981215.0217" />
+<doc id="APW19990311.0200" />
+<doc id="NYT19980918.0080" />
+<doc id="APW19990514.0217" />
+<doc id="NYT19981116.0299" />
+<doc id="APW19990205.0323" />
+<doc id="APW19990610.0178" />
+<doc id="NYT19981116.0297" />
+</docsetA>
+</topic>
+<topic id="D0647B" category="1">
+<title> Elian Gonzales custody battle </title>
+<docsetA id="D0647B-A">
+<doc id="APW20000108.0164" />
+<doc id="NYT20000327.0428" />
+<doc id="NYT20000623.0265" />
+<doc id="NYT20000105.0098" />
+<doc id="APW20000628.0270" />
+<doc id="NYT20000329.0409" />
+<doc id="APW20000718.0184" />
+<doc id="APW20000113.0335" />
+<doc id="APW20000601.0194" />
+<doc id="NYT20000421.0104" />
+<doc id="XIE20000418.0002" />
+<doc id="NYT20000418.0090" />
+<doc id="NYT20000628.0083" />
+<doc id="NYT20000329.0399" />
+<doc id="APW20000107.0326" />
+<doc id="XIE20000629.0267" />
+<doc id="NYT20000113.0061" />
+<doc id="NYT20000412.0320" />
+<doc id="NYT20000415.0172" />
+<doc id="NYT20000414.0175" />
+<doc id="NYT20000531.0316" />
+<doc id="NYT20000412.0024" />
+<doc id="XIE20000419.0018" />
+<doc id="APW20000628.0239" />
+<doc id="NYT20000107.0242" />
+</docsetA>
+</topic>
+<topic id="D0648C" category="1">
+<title> obsessive-compulsive disorder </title>
+<docsetA id="D0648C-A">
+<doc id="APW19981125.1374" />
+<doc id="APW20000225.0001" />
+<doc id="NYT19980922.0117" />
+<doc id="NYT19990514.0167" />
+<doc id="NYT19981008.0166" />
+<doc id="NYT19991025.0311" />
+<doc id="APW20000109.0061" />
+<doc id="NYT19990118.0373" />
+<doc id="NYT19990428.0409" />
+<doc id="APW19990504.0205" />
+<doc id="NYT19991218.0162" />
+<doc id="APW19981124.1461" />
+<doc id="NYT19990125.0149" />
+<doc id="NYT20000110.0344" />
+<doc id="XIE19981105.0376" />
+<doc id="NYT19990113.0371" />
+<doc id="NYT19991026.0091" />
+<doc id="APW19990222.0014" />
+<doc id="APW19990514.0267" />
+<doc id="APW19990429.0187" />
+<doc id="NYT20000925.0105" />
+<doc id="NYT20000319.0172" />
+<doc id="NYT19991119.0111" />
+<doc id="APW19991008.0263" />
+<doc id="NYT19991115.0069" />
+</docsetA>
+</topic>
+<topic id="D0649D" category="1">
+<title> election of Vladimir Putin in 2000 </title>
+<docsetA id="D0649D-A">
+<doc id="NYT20000107.0186" />
+<doc id="APW20000318.0086" />
+<doc id="XIE20000225.0154" />
+<doc id="APW20000309.0135" />
+<doc id="XIE20000402.0162" />
+<doc id="APW20000114.0174" />
+<doc id="XIE19990809.0160" />
+<doc id="XIE20000405.0061" />
+<doc id="NYT20000203.0086" />
+<doc id="APW20000309.0159" />
+<doc id="APW20000422.0011" />
+<doc id="APW20000313.0090" />
+<doc id="XIE19991231.0061" />
+<doc id="XIE20000118.0341" />
+<doc id="NYT20000327.0154" />
+<doc id="APW20000326.0151" />
+<doc id="XIE20000507.0099" />
+<doc id="APW20000208.0190" />
+<doc id="NYT19990809.0314" />
+<doc id="XIE20000419.0207" />
+<doc id="APW20000111.0245" />
+<doc id="NYT20000328.0223" />
+<doc id="APW20000228.0100" />
+<doc id="APW20000222.0186" />
+<doc id="NYT20000307.0286" />
+</docsetA>
+</topic>
+<topic id="D0650E" category="1">
+<title> former President Carter's international activities </title>
+<docsetA id="D0650E-A">
+<doc id="XIE19991207.0023" />
+<doc id="XIE19961011.0092" />
+<doc id="XIE19990115.0158" />
+<doc id="NYT19980827.0403" />
+<doc id="XIE19990105.0092" />
+<doc id="NYT19980909.0061" />
+<doc id="XIE19990121.0057" />
+<doc id="NYT20000701.0174" />
+<doc id="NYT19990812.0237" />
+<doc id="APW20000511.0167" />
+<doc id="XIE19970701.0189" />
+<doc id="NYT20000620.0252" />
+<doc id="XIE19991202.0107" />
+<doc id="NYT19991020.0378" />
+<doc id="NYT19990608.0284" />
+<doc id="APW19981204.1241" />
+<doc id="XIE19990223.0131" />
+<doc id="APW20000211.0280" />
+<doc id="NYT19990925.0127" />
+<doc id="XIE19970424.0110" />
+<doc id="XIE20000809.0112" />
+<doc id="XIE19991001.0278" />
+<doc id="NYT20000702.0081" />
+<doc id="XIE20000509.0350" />
+<doc id="APW20000213.0108" />
+</docsetA>
+</topic>
+</TACtaskdata>

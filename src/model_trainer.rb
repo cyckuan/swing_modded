@@ -10,9 +10,10 @@ require 'json'
 require 'fileutils'
 require 'Input/WordSplitter'
 require 'Input/StopList'
+require 'Features/FeaturePipeline'
 require 'SVR/category_statistics' #unigram stats over collection
 
-def print_instances(dir, model_dir, to_file, which_set,xml_file,features,granularity,clean_data)
+def print_instances(dir, model_dir, to_file, which_set,xml_file,features,granularity,clean_data,sentence_file,sentence_map,sentence_scores)
     
     if clean_data == "no"
         l_use_clean_data = false
@@ -23,9 +24,15 @@ def print_instances(dir, model_dir, to_file, which_set,xml_file,features,granula
 
     ## Computing Category statistics for guided summarization
 
+    STDOUT.puts "computing category statistics ..."
+
+    `rm #{sentence_file}`
+    `rm #{sentence_map}`
+    `rm #{sentence_scores}`
+    
     if granularity == "sentence"
         cat_stat = CategoryStatistics.new 
-        stat_file=cat_stat.json_build_category_statistics dir, xml_file, which_set, l_use_clean_data ##
+        stat_file=cat_stat.json_build_category_statistics dir, xml_file, which_set, l_use_clean_data, sentence_file, sentence_map
     elsif granularity == "NP"
         stat_file=  File.dirname(__FILE__)+'/../data/Phrases/NP_2010.txt'
     elsif granularity == "VP"
@@ -33,57 +40,37 @@ def print_instances(dir, model_dir, to_file, which_set,xml_file,features,granula
     elsif granularity == "PP"
         stat_file=  File.dirname(__FILE__)+'/../data/Phrases/PP_2010.txt'
     end
-    fh = File.open(to_file, 'w') 
+    
+    STDOUT.puts "category statistics complete!"
+    
+    STDOUT.puts "calculating sentence specificity scores"
 
+    `/data/speciteller/speciteller/speciteller.py --inputfile #{sentence_file} --outputfile /#{sentence_scores}`
+    
+    STDOUT.puts "specificity scores complete!"
+    
+    STDOUT.puts "iterating through cases ..."
+    
+    fh = File.open(to_file, 'w') 
+    
     sets = Dir.glob(dir.to_s+'/*/*-'+which_set).sort
     set_cnt = 1
 
+    STDOUT.puts "processing sets : " + sets.count.to_s
+    
     sets.each do |set_id|
-        puts set_cnt.to_s + ' ' + set_id
+        
+        STDOUT.puts "current set " + set_cnt.to_s + " : " + set_id
+        
         set_cnt += 1
 
-        feature_list = features.split(",")
-        feature_list =feature_list.map{ |feature| feature.strip}
-        user_features =''
-        feature_list.each do |feature|
-            case feature
-                when 'dfs'
-                    user_features += "| ruby Features/dfs_bigram.rb "
-                when 'sp'
-                    user_features += "| ruby Features/sentenceposition.rb "
-                when 'crs'
-                    user_features += "| ruby Features/gfs.rb -s #{stat_file} "
-                when 'ckld'
-                    user_features += "| ruby Features/ckld.rb -s #{stat_file} "
-                when 'sl'
-                    user_features += "| ruby Features/sentencelength.rb "
-                when 'ss'
-                    user_features += "| ruby Features/sentencespecificity.rb "
-                else
-                    puts "Invalid Features"
-            end
-
-        end
-
-        #user_features = "ruby Features/sentenceposition.rb | ruby Features/dfs.rb "
-
-        cmd_process_data = l_use_clean_data ? "ruby Input/ProcessCleanDocs.rb -s #{set_id} -x #{xml_file} | ruby Input/SentenceSplitter.rb" :
-            "ruby Input/ProcessTACTestDocs.rb -s #{set_id} -x #{xml_file} | ruby Input/SentenceSplitter.rb"
-
-		train_conf = ParseConfig.new(File.dirname(__FILE__)+'/../configuration.conf')
-		sentence_file = train_conf.params['general']['sentence file']
-		sentence_map = train_conf.params['general']['sentence map']
-		sentence_scores = train_conf.params['general']['sentence scores']
-			
-		`/data/speciteller/speciteller/speciteller.py --inputfile #{sentence_file} --outputfile /#{sentence_scores}`
-
-			
-		STDERR.puts cmd_process_data
+        feature_pipeline = build_feature_pipeline(features, stat_file)
+        
+        cmd_process_data = "ruby Input/ProcessCleanDocs.rb -s #{set_id} -x #{xml_file} | ruby Input/SentenceSplitter.rb"
 
         #str = `cd #{File.dirname(__FILE__)}/..; \
-        str = `#{cmd_process_data} \
-        #{user_features} \
-        | ruby SVR/importance.rb -m #{model_dir}`
+        
+        str = `#{cmd_process_data} #{feature_pipeline} | ruby -W0 SVR/importance.rb -m #{model_dir}`
 
         l_JSON = JSON.parse(str)
         l_JSON['importances'].keys.sort_by {|a| a.split('_').map {|e| e.to_i}} .each do |id|
@@ -99,27 +86,30 @@ def print_instances(dir, model_dir, to_file, which_set,xml_file,features,granula
             fh.puts instance
         end
 
-	if which_set == "A" then
-		set_A_fh = File.open("../data/set_A_text/"+File.basename(set_id), 'w')
-		l_JSON["splitted_sentences"].each do |l_Article|
-			l_Article["sentences"].sort {|a,b| a[0].to_i<=>b[0].to_i} .each do |l_senid, l_sentence| 
-				set_A_fh.puts "#{l_Article["doc_id"]}_#{l_senid}\t" + l_JSON['importances']["#{l_Article["doc_id"]}_#{l_senid}"].to_s + "\t" + l_sentence 
-			end
-		end
-		set_A_fh.close
-	end
+        if which_set == "A" then
+            set_A_fh = File.open("../data/set_A_text/"+File.basename(set_id), 'w')
+            l_JSON["splitted_sentences"].each do |l_Article|
+                l_Article["sentences"].sort {|a,b| a[0].to_i<=>b[0].to_i} .each do |l_senid, l_sentence| 
+                    set_A_fh.puts "#{l_Article["doc_id"]}_#{l_senid}\t" + l_JSON['importances']["#{l_Article["doc_id"]}_#{l_senid}"].to_s + "\t" + l_sentence 
+                end
+            end
+            set_A_fh.close
+        end
 
     end
     fh.close
+    
+    STDOUT.puts "iterations complete!"
+    
 end
 
 
 
-def svr_train(train_dir, model_dir, model_file, which_set,xml_file,features,granularity,clean_data)
+def svr_train(train_dir, model_dir, model_file, which_set,xml_file,features,granularity,clean_data,sentence_file,sentence_map,sentence_scores)
     train_file = model_file.match(/\.model$/) ? model_file.sub(/\.model$/, '.train') : model_file+'.train'
-    print_instances(train_dir, model_dir, train_file, which_set,xml_file,features,granularity,clean_data)
+    print_instances(train_dir, model_dir, train_file, which_set,xml_file,features,granularity,clean_data,sentence_file,sentence_map,sentence_scores)
     svm_dir = File.dirname(__FILE__)+'/../lib/svm_light'
-   `#{svm_dir}/svm_learn -z r -t 2 #{train_file} #{model_file} 1>&2`
+    `#{svm_dir}/svm_learn -z r -t 2 #{train_file} #{model_file} 1>&2`
 end
 
 
@@ -134,9 +124,8 @@ if __FILE__ == $0 then
     features = train_conf.params['general']['features']
     granularity = train_conf.params['general']['scoring granularity']
     clean_data = train_conf.params['general']['clean data']
-	sentence_file = train_conf.params['general']['sentence file']
-	sentence_map = train_conf.params['general']['sentence map']
-	`rm #{sentence_file}`
-	`rm #{sentence_map}`
-    svr_train(train_dir, model_dir, model_file, which_set,xml_file,features,granularity,clean_data)
+    sentence_file = train_conf.params['general']['sentence file']
+    sentence_map = train_conf.params['general']['sentence map']
+    sentence_scores = train_conf.params['general']['sentence scores']
+    svr_train(train_dir, model_dir, model_file, which_set,xml_file,features,granularity,clean_data,sentence_file,sentence_map,sentence_scores)
 end
