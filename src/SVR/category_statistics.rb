@@ -177,11 +177,14 @@ def json_build_category_statistics train_dir, xml_file, which_set, use_clean_dat
     $g_xml = xml_file
     $g_topics = Dir.glob($g_docs_dir+'/*/*-'+which_set).sort #change cluster to B
     
+    STDERR.puts ""
     $g_topics.each do |l_topic|
-    
+
+        STDERR.print l_topic
+
         str = `ruby -W0 Input/ProcessCleanDocs.rb -s #{l_topic} -x #{$g_xml} | ruby -W0 Input/SentenceSplitter.rb | ruby -W0 Input/SentenceMapper.rb -s #{sentence_file} -m #{sentence_map}`
-        
-        # STDERR.puts str
+        STDERR.print "."
+
         l_JSON = JSON.parse str
         category = l_JSON['corpus'][0]["category"]
         topic_id = l_JSON['corpus'][0]["docset"].slice 0..-3
@@ -193,22 +196,31 @@ def json_build_category_statistics train_dir, xml_file, which_set, use_clean_dat
             ld_Sentences = l_Article["sentences"].values
             lt_Sentences.push ld_Sentences
        end
+       
        build_topic_dfs_map lt_Sentences, topic_id
+       STDERR.print "."
 
        lt_flatten = lt_Sentences.flatten
+ 
        build_topic_word_map lt_flatten, topic_id
+       STDERR.print "."
+
        build_topic_word_frequency_map lt_flatten, topic_id
+       STDERR.print "."
+       
+       STDERR.puts ""
     end
 
 
     $g_CTMap.keys.each do |category|
         build_category_tfs category
+        STDERR.print "."
         build_category_dfs category
+        STDERR.print "."
         build_category_term_frequency category
+        STDERR.print "."
     end 
 
-
- 
     $g_JSON = { "category_topic_freq"=>$g_CM , "category_doc_freq"=>$g_CDM,"category_term_freq"=>$g_CTM,"category_topics"=>$g_CTMap}
 
     stat_file = '../data/category_stats'

@@ -12,45 +12,45 @@ sentence_map = conf.params['general']['sentence map']
 sentence_scores = conf.params['general']['sentence scores']
 
 fsm = File.open(sentence_map,'r')
-fsmenum = fsm.to_enum
 fss = File.open(sentence_scores,'r')
-fssenum = fss.to_enum
 
-specificity_scores = Hash.new
-
-loop do
-    sm = fsmenum.next
-    ss = fssenum.next
-    specificity_scores[sm] = ss.to_f
+$specificity_scores = Hash.new
+fss.each.zip(fsm.each).each do |ss, sm|
+    sm.gsub!("\n",'').strip()
+    $specificity_scores[sm] = ss.to_f
+    STDERR.puts sm + " - " + ss
 end
 
 fsm.close()
 fss.close()
 
-# f1 = File.open(...)
-# f2 = File.open(...)
 
-# f1.each.zip(f2.each).each do |line1, line2|
+# 
   # Do something with the lines
 # end
-# zip is one 
 
+
+threshold = 0.9
 
 ARGF.each do |l_JSN|
     l_JSON = JSON.parse l_JSN
     $f_ss = {}
     l_JSON["splitted_sentences"].each do |l_Article|
-        STDERR.puts l_Article["actual_doc_id"]
         tot_sen = l_Article["sentences"].length
         
         sen_num = 0
         l_Article["sentences"].each do |l_senid,l_sentence|
+        
             score = 0.0    
-            doc_sen_id = "#{l_Article["doc_id"]}_#{l_senid}"
-			if specificity_scores.has_key?(doc_sen_id) then
-				score = specificity_scores[doc_sen_id]
-			end
+            doc_sen_id = l_Article["doc_id"] + "_" + l_senid
+            if $specificity_scores.key?(doc_sen_id) then
+                score = $specificity_scores[doc_sen_id]
+                score = score > threshold ? (score - threshold) / (1 - threshold) : (threshold - score)/threshold
+            end
+            STDERR.puts score.to_s + " - " + l_sentence
             $f_ss[doc_sen_id]=score
+            
+            sen_num += 1
         end
     end
     feature={"ss"=>$f_ss}

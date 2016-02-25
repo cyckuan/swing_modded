@@ -23,8 +23,8 @@ def print_instances(dir, model_dir, to_file, which_set,xml_file,features,granula
 
 
     ## Computing Category statistics for guided summarization
-
-    STDOUT.puts "computing category statistics ..."
+    
+    STDERR.puts "computing category statistics ..."
 
     `rm #{sentence_file}`
     `rm #{sentence_map}`
@@ -32,35 +32,35 @@ def print_instances(dir, model_dir, to_file, which_set,xml_file,features,granula
     
     if granularity == "sentence"
         cat_stat = CategoryStatistics.new 
-        stat_file=cat_stat.json_build_category_statistics dir, xml_file, which_set, l_use_clean_data, sentence_file, sentence_map
+        stat_file = cat_stat.json_build_category_statistics dir, xml_file, which_set, l_use_clean_data, sentence_file, sentence_map
     elsif granularity == "NP"
-        stat_file=  File.dirname(__FILE__)+'/../data/Phrases/NP_2010.txt'
+        stat_file =  File.dirname(__FILE__)+'/../data/Phrases/NP_2010.txt'
     elsif granularity == "VP"
-        stat_file=  File.dirname(__FILE__)+'/../data/Phrases/VP_2010.txt'
+        stat_file =  File.dirname(__FILE__)+'/../data/Phrases/VP_2010.txt'
     elsif granularity == "PP"
-        stat_file=  File.dirname(__FILE__)+'/../data/Phrases/PP_2010.txt'
+        stat_file =  File.dirname(__FILE__)+'/../data/Phrases/PP_2010.txt'
     end
+
+    STDERR.puts "\ncategory statistics complete!"
     
-    STDOUT.puts "category statistics complete!"
-    
-    STDOUT.puts "calculating sentence specificity scores"
+    STDERR.puts "calculating sentence specificity scores ..."
 
     `/data/speciteller/speciteller/speciteller.py --inputfile #{sentence_file} --outputfile /#{sentence_scores}`
     
-    STDOUT.puts "specificity scores complete!"
+    STDERR.puts "specificity scores complete!"
     
-    STDOUT.puts "iterating through cases ..."
+    STDERR.puts "iterating through cases ..."
     
     fh = File.open(to_file, 'w') 
     
     sets = Dir.glob(dir.to_s+'/*/*-'+which_set).sort
     set_cnt = 1
 
-    STDOUT.puts "processing sets : " + sets.count.to_s
+    STDERR.puts "processing sets : " + sets.count.to_s
     
     sets.each do |set_id|
         
-        STDOUT.puts "current set " + set_cnt.to_s + " : " + set_id
+        STDERR.puts "current set " + set_cnt.to_s + " : " + set_id
         
         set_cnt += 1
 
@@ -99,7 +99,8 @@ def print_instances(dir, model_dir, to_file, which_set,xml_file,features,granula
     end
     fh.close
     
-    STDOUT.puts "iterations complete!"
+    STDERR.puts "iterations complete!"
+    STDERR.puts "please run summary_generator.rb"
     
 end
 

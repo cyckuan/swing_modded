@@ -37,8 +37,8 @@ ARGF.each do |l_JSN|
         l_docSent["topic_text"] = l_Article["topic_text"]
         l_docSent["category"] = l_Article["category"]
 
-        doc_sentences={}
-        sen_num=0
+        doc_sentences = {}
+        sen_num = 0
         doc_num += 1
 
         l_ArticleText = l_Article["text"]

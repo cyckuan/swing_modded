@@ -61,7 +61,7 @@ if __FILE__ == $0 then
 
     STDOUT.puts "computing category complete!"
 
-    STDOUT.puts "calculating sentence specificity scores"
+    STDOUT.puts "calculating sentence specificity scores ..."
     
     `/data/speciteller/speciteller/speciteller.py --inputfile #{sentence_file} --outputfile /#{sentence_scores}`
     
@@ -82,13 +82,6 @@ if __FILE__ == $0 then
         feature_pipeline = build_feature_pipeline(features,stat_file)
 
         cmd_process_data = "ruby Input/ProcessCleanDocs.rb -s #{set_id} -x #{xml_file} | ruby Input/SentenceSplitter.rb"
-
-        conf = ParseConfig.new(File.dirname(__FILE__)+'/../configuration.conf')
-        sentence_file = conf.params['general']['sentence file']
-        sentence_map = conf.params['general']['sentence map']
-        sentence_scores = conf.params['general']['sentence scores']
-            
-        `/data/speciteller/speciteller/speciteller.py --inputfile #{sentence_file} --outputfile /#{sentence_scores}`
 
         #str = `cd #{File.dirname(__FILE__)}/..; \
 

@@ -26,15 +26,11 @@ if __FILE__ == $0 then
         doc_num = 0
         l_JSON["splitted_sentences"].each do |l_Article|
 
-             l_docId = l_Article["actual_doc_id"]
+            l_docId = l_Article["actual_doc_id"]
 
-            sen_num = 0
-            doc_num += 1
-
-            l_Article["sentences"].each do |l_sentence|
+            l_Article["sentences"].each do |l_sen_num, l_sentence|
                 fs.puts l_sentence
-                fsm.puts l_docId + '_' + sen_num.to_s
-                sen_num += 1
+                fsm.puts l_docId + '_' + l_sen_num.to_s
             end if l_Article["sentences"]
 
         end if l_JSON['corpus']
