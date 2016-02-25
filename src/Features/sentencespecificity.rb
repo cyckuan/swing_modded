@@ -42,7 +42,7 @@ ARGF.each do |l_JSN|
         l_Article["sentences"].each do |l_senid,l_sentence|
         
             score = 0.0    
-            doc_sen_id = l_Article["doc_id"] + "_" + l_senid
+            doc_sen_id = l_Article["doc_id"] + "_" + l_senid.to_s
             if $specificity_scores.key?(doc_sen_id) then
                 score = $specificity_scores[doc_sen_id]
                 score = score > threshold ? (score - threshold) / (1 - threshold) : (threshold - score)/threshold
