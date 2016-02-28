@@ -277,7 +277,7 @@ ARGF.each do |l_JSON|
     #$stderr.puts "Scored sentences."
 
     l_JSON["features"].push( {"kld" => l_ScoredSentences} )
-   $stdout.puts l_JSON.to_json()
+    puts l_JSON.to_json()
 
 end
 

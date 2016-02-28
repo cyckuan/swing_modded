@@ -15,6 +15,8 @@ require 'getopt/std'
 #require '../lib/ptb_tokenizer'
 #require '../lib/stemmable'
 
+
+
 class CategoryStatistics
 
 #attr_accessor :$g_CM, :$g_CDM, :$g_TDMap, :$g_TWMap, $g_CTMap
@@ -170,12 +172,16 @@ def build_category_topic_map category, topic_id
 end
 
 
-def json_build_category_statistics train_dir, xml_file, which_set, use_clean_data, sentence_file, sentence_map
+def json_build_category_statistics train_dir, xml_file, which_set, sentence_file, sentence_map, category_stat_file
 
     $g_docs_dir = train_dir
     #$g_cluster = opt['w']
     $g_xml = xml_file
     $g_topics = Dir.glob($g_docs_dir+'/*/*-'+which_set).sort #change cluster to B
+
+    [sentence_file,sentence_map].each do |temp_file|
+        File.delete(temp_file) if File.exist?(temp_file)
+    end
     
     STDERR.puts ""
     $g_topics.each do |l_topic|
@@ -223,12 +229,13 @@ def json_build_category_statistics train_dir, xml_file, which_set, use_clean_dat
 
     $g_JSON = { "category_topic_freq"=>$g_CM , "category_doc_freq"=>$g_CDM,"category_term_freq"=>$g_CTM,"category_topics"=>$g_CTMap}
 
-    stat_file = '../data/category_stats'
-    fw = File.open stat_file,'w'
+    fw = File.open(category_stat_file,'w')
     fw.puts JSON.generate $g_JSON
     fw.close
-    return stat_file
+    return category_stat_file
     #puts JSON.generate($g_JSON)
 end
+
+
 ###############################################################################################
 end

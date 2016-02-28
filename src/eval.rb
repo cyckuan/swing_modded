@@ -64,13 +64,16 @@ def run_ROUGE(peer_root, model_root)
     #    puts value
     #end
 
+    File.open(rouge_out_file, "r") do |f|
+        f.each_line do |l|
+            STDERR.puts l
+        end
+    end
 end
 
 
 
 if __FILE__ == $0 then
-        
-    
     test_conf = ParseConfig.new(File.dirname(__FILE__)+'/../configuration.conf')
     model_root = test_conf.params['test']['model summaries dir']
     peer_root = "../data/Summaries/"+test_conf.params['test']['summaries dir']

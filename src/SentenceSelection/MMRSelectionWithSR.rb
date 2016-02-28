@@ -17,6 +17,8 @@ require 'nokogiri'
 require 'pp'
 require 'base64'
 require 'parseconfig'
+require 'getopt/std'
+
 require File.dirname(__FILE__)+'/../SVR/importance'
 
 
@@ -91,7 +93,7 @@ def SentenceSelection.PopulateVector(a_Vector, a_Sentence)
 
 end
 
-def SentenceSelection.CalculateMMR(a_Sentence, a_SentenceRelevance, a_Title, a_Narrative, a_ZoneIndex, a_arrSelected, which_set, set_A_sents)
+def SentenceSelection.CalculateMMR(a_Sentence, a_SentenceRelevance, a_Title, a_Narrative, a_ZoneIndex, a_arrSelected, which_set, set_A_sents, a_SentenceSpecificity)
     
 #   l_Sim1 = ComputeCosim(l_VectorQuery, l_VectorTopic)
 
@@ -102,7 +104,7 @@ def SentenceSelection.CalculateMMR(a_Sentence, a_SentenceRelevance, a_Title, a_N
 
     # Make use of pre-computed sentence relevance score
     l_Sim1 = a_SentenceRelevance
-
+    # l_Sim1 = a_SentenceSpecificity
 
     l_Sim2 = 0.0
     if a_arrSelected.size > 0 then
@@ -169,6 +171,28 @@ end
 end
 
 
+
+def load_specificity_scores(sentence_scores,sentence_map)
+
+    fsm = File.open(sentence_map,'r')
+    fss = File.open(sentence_scores,'r')
+
+    specificity_scores = Hash.new
+    fss.each.zip(fsm.each).each do |ss, sm|
+        sm.gsub!("\n",'').strip()
+        specificity_scores[sm] = ss.to_f
+    end
+
+    fsm.close()
+    fss.close()
+    
+    return specificity_scores
+
+end
+
+
+
+
 # Defines the allowed options
 # # # # # # # # # # # # # # # # # # # # # # # # #
 $g_CmdLineOptions = {}
@@ -186,13 +210,13 @@ $g_ParsedOptions =  OptionParser.new do |opts|
     opts.on( '-s' , '--src Topic_File', 'Path to topic file' ) do |l_szName|
         $g_CmdLineOptions[:src] = l_szName
     end
+    opts.on( '-p' , '--previous', 'Previous (Set A) Summary' ) do |l_szName|
+        $g_CmdLineOptions[:prev] = l_szName
+    end
     opts.on( '-h', '--help', 'Display this screen' ) do
         puts opts
         exit
-    end
-    opts.on( '-p' , '--previous Previous (Set A) Summary', 'Previous (Set A) Summary' ) do |l_szName|
-        $g_CmdLineOptions[:prev] = l_szName
-    end
+    end    
 end
 
 # Parse the incoming command line arguments
@@ -205,6 +229,13 @@ if $g_CmdLineOptions[:src].nil? then
     raise OptionParser::MissingArgument
 end
 
+test_conf = ParseConfig.new(File.dirname(__FILE__)+'/../../configuration.conf')
+mmr_similarity = test_conf.params['test']['similarity criteria']
+sentence_map = test_conf.params['test']['sentence map']
+sentence_scores = test_conf.params['test']['sentence scores']
+
+$g_specificity_scores = load_specificity_scores(sentence_scores, sentence_map)
+
 
 # Makes use of the ZonedSentences class to hold the processed elements
 ARGF.each do |l_szJSON|
@@ -214,8 +245,6 @@ ARGF.each do |l_szJSON|
 
     set_A_sents = nil
     
-    test_conf = ParseConfig.new(File.dirname(__FILE__)+'/../../configuration.conf')
-    mmr_similarity = test_conf.params['test']['similarity criteria']
     if mmr_similarity == "summary"
 
         use_summary = true
@@ -260,7 +289,6 @@ ARGF.each do |l_szJSON|
         #selected_sid = l_JSON["summary_sid"].strip.split
     end
 
-
     while l_JSON["summary"].split(/\s/).length < $g_CmdLineOptions[:maxlength] do
         l_BestMMR = -9999.0
         l_BestSentence = ""
@@ -276,9 +304,10 @@ ARGF.each do |l_szJSON|
             # Retrieved the mapped doc and sentence IDs
             #l_MappedDocID, l_MappedSenID = l_RawScoreHash[l_ID.to_i()].split('_')
             l_MappedDocID = l_ID.split('_')[0].to_i()
-            l_MappedSenID= l_ID.split('_')[1].to_i()
-            l_CandidateSentence = l_JSON["splitted_sentences"][l_MappedDocID]["sentences"]["#{l_MappedSenID}"]
+            l_MappedSenID= l_ID.split('_')[1]
+            l_CandidateSentence = l_JSON["splitted_sentences"][l_MappedDocID]["sentences"][l_MappedSenID]
 
+            
            
             # ###################################
             # Heuristics to quicken the process
@@ -296,8 +325,12 @@ ARGF.each do |l_szJSON|
 
             #$stderr.puts "Retrieved #{l_MappedDocID}_#{l_MappedSenID}: [#{l_Score}]  #{l_CandidateSentence}"
 
+            # sentence specificity score
+            sentence_specificity_score = $g_specificity_scores[l_JSON["splitted_sentences"][l_MappedDocID]["actual_doc_id"] + '_' + l_MappedSenID]
+            # sentence_specificity_score = 1
+            
             # Calculate MMR 
-            l_MMR = WINGSummarisation::SentenceSelection.CalculateMMR(l_CandidateSentence, l_Score, l_Title, l_Narrative, -1, l_arrSelected, which_set, set_A_sents)
+            l_MMR = sentence_specificity_score * WINGSummarisation::SentenceSelection.CalculateMMR(l_CandidateSentence, l_Score, l_Title, l_Narrative, -1, l_arrSelected, which_set, set_A_sents, sentence_specificity_score)
         
             if l_MMR > l_BestMMR then
                 l_BestMMR = l_MMR
@@ -319,7 +352,7 @@ ARGF.each do |l_szJSON|
     end # end while
 
 
-    $stdout.puts l_JSON.to_json
+    puts l_JSON.to_json
 
 end
 

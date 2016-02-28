@@ -124,7 +124,7 @@ $g_ParsedOptions = OptionParser.new do |opts|
         $g_CmdLineOptions[:oneoff] = true
 
         # Process sentence
-        $stdout.puts ProcessSentence(Base64.decode64(l_szSentence).lstrip.rstrip)
+        puts ProcessSentence(Base64.decode64(l_szSentence).lstrip.rstrip)
 
     end
     opts.on('-h','--help','Display this screen') do
@@ -176,7 +176,7 @@ ARGF.each do |l_szJSON|
     l_JSON["summary"] = l_NewSummary
 
     # Return the JSON string
-    $stdout.puts l_JSON.to_json
+    puts l_JSON.to_json
 
 end
 

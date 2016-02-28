@@ -3,52 +3,40 @@
 ### Ziheng
 $LOAD_PATH.unshift(File.dirname(__FILE__) )
 #$LOAD_PATH.unshift(File.dirname(__FILE__) + '/../..')
+
 require 'rubygems'
 require 'pp'
-require 'parseconfig'
 require 'json'
 require 'fileutils'
+require 'parseconfig'
+
 require 'Input/WordSplitter'
 require 'Input/StopList'
 require 'Features/FeaturePipeline'
 require 'SVR/category_statistics' #unigram stats over collection
 
-def print_instances(dir, model_dir, to_file, which_set,xml_file,features,granularity,clean_data,sentence_file,sentence_map,sentence_scores)
-    
-    if clean_data == "no"
-        l_use_clean_data = false
-    elsif clean_data == "yes"
-        l_use_clean_data = true
-    end    
 
+def print_instances(dir, model_dir, to_file, which_set,xml_file,features,sentence_file,sentence_map,sentence_scores, category_stat_file)
 
-    ## Computing Category statistics for guided summarization
-    
     STDERR.puts "computing category statistics ..."
-
-    `rm #{sentence_file}`
-    `rm #{sentence_map}`
-    `rm #{sentence_scores}`
     
-    if granularity == "sentence"
+    if File.exist?(category_stat_file)
+        stat_file = category_stat_file
+    else
         cat_stat = CategoryStatistics.new 
-        stat_file = cat_stat.json_build_category_statistics dir, xml_file, which_set, l_use_clean_data, sentence_file, sentence_map
-    elsif granularity == "NP"
-        stat_file =  File.dirname(__FILE__)+'/../data/Phrases/NP_2010.txt'
-    elsif granularity == "VP"
-        stat_file =  File.dirname(__FILE__)+'/../data/Phrases/VP_2010.txt'
-    elsif granularity == "PP"
-        stat_file =  File.dirname(__FILE__)+'/../data/Phrases/PP_2010.txt'
+        stat_file = cat_stat.json_build_category_statistics dir, xml_file, which_set, sentence_file, sentence_map, category_stat_file
     end
+    
+    STDERR.puts "category statistics complete!"
 
-    STDERR.puts "\ncategory statistics complete!"
+    STDERR.puts "calculate sentence specificity scores ..."    
     
-    STDERR.puts "calculating sentence specificity scores ..."
+    if not File.exist?(sentence_scores)
+        `/data/speciteller/speciteller/speciteller.py --inputfile #{sentence_file} --outputfile /#{sentence_scores}`
+    end
+    
+    STDERR.puts "sentence specificity scoring complete!"   
 
-    `/data/speciteller/speciteller/speciteller.py --inputfile #{sentence_file} --outputfile /#{sentence_scores}`
-    
-    STDERR.puts "specificity scores complete!"
-    
     STDERR.puts "iterating through cases ..."
     
     fh = File.open(to_file, 'w') 
@@ -57,6 +45,8 @@ def print_instances(dir, model_dir, to_file, which_set,xml_file,features,granula
     set_cnt = 1
 
     STDERR.puts "processing sets : " + sets.count.to_s
+
+    feature_pipeline = build_feature_pipeline('train', features, stat_file)
     
     sets.each do |set_id|
         
@@ -64,8 +54,6 @@ def print_instances(dir, model_dir, to_file, which_set,xml_file,features,granula
         
         set_cnt += 1
 
-        feature_pipeline = build_feature_pipeline(features, stat_file)
-        
         cmd_process_data = "ruby Input/ProcessCleanDocs.rb -s #{set_id} -x #{xml_file} | ruby Input/SentenceSplitter.rb"
 
         #str = `cd #{File.dirname(__FILE__)}/..; \
@@ -100,19 +88,37 @@ def print_instances(dir, model_dir, to_file, which_set,xml_file,features,granula
     fh.close
     
     STDERR.puts "iterations complete!"
-    STDERR.puts "please run summary_generator.rb"
     
 end
 
 
+def load_specificity_scores()
+    conf = ParseConfig.new(File.dirname(__FILE__)+'/../../configuration.conf')
+    sentence_file = conf.params['general']['sentence file']
+    sentence_map = conf.params['general']['sentence map']
+    sentence_scores = conf.params['general']['sentence scores']
 
-def svr_train(train_dir, model_dir, model_file, which_set,xml_file,features,granularity,clean_data,sentence_file,sentence_map,sentence_scores)
+    fsm = File.open(sentence_map,'r')
+    fss = File.open(sentence_scores,'r')
+
+    $specificity_scores = Hash.new
+    fss.each.zip(fsm.each).each do |ss, sm|
+        sm.gsub!("\n",'').strip()
+        $specificity_scores[sm] = ss.to_f
+        STDERR.puts sm + " - " + ss
+    end
+
+    fsm.close()
+    fss.close()
+end
+
+
+def svr_train(train_dir, model_dir, model_file, which_set,xml_file,features,sentence_file,sentence_map,sentence_scores,category_stat_file)
     train_file = model_file.match(/\.model$/) ? model_file.sub(/\.model$/, '.train') : model_file+'.train'
-    print_instances(train_dir, model_dir, train_file, which_set,xml_file,features,granularity,clean_data,sentence_file,sentence_map,sentence_scores)
+    print_instances(train_dir, model_dir, train_file, which_set,xml_file,features,sentence_file,sentence_map,sentence_scores,category_stat_file)
     svm_dir = File.dirname(__FILE__)+'/../lib/svm_light'
     `#{svm_dir}/svm_learn -z r -t 2 #{train_file} #{model_file} 1>&2`
 end
-
 
 
 if __FILE__ == $0 then
@@ -122,11 +128,12 @@ if __FILE__ == $0 then
     model_file = "../data/"+train_conf.params['train']['model file']
     which_set = train_conf.params['train']['document set']
     xml_file = train_conf.params['train']['xml file']
+    category_stat_file = train_conf.params['train']['category stat file']
+    sentence_file = train_conf.params['train']['sentence file']
+    sentence_map = train_conf.params['train']['sentence map']
+    sentence_scores = train_conf.params['train']['sentence scores']
+    
     features = train_conf.params['general']['features']
-    granularity = train_conf.params['general']['scoring granularity']
-    clean_data = train_conf.params['general']['clean data']
-    sentence_file = train_conf.params['general']['sentence file']
-    sentence_map = train_conf.params['general']['sentence map']
-    sentence_scores = train_conf.params['general']['sentence scores']
-    svr_train(train_dir, model_dir, model_file, which_set,xml_file,features,granularity,clean_data,sentence_file,sentence_map,sentence_scores)
+    
+    svr_train(train_dir, model_dir, model_file, which_set,xml_file,features,sentence_file,sentence_map,sentence_scores,category_stat_file)
 end

@@ -48,6 +48,10 @@ def calc_sent_importance(models, s)
         sum += [bigram_m[k], bigram_s[k]].max
     end
     importance = sum * 1.0 / s_len
+    
+    # STDERR.puts (bigram_m.keys & bigram_s.keys)
+    # STDERR.puts importance.to_s
+    
     importance
 end
 

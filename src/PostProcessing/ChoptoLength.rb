@@ -58,7 +58,7 @@ ARGF.each do |l_szJSON|
     l_JSON["summary"] = l_NewSummary
 
     # Return the JSON string
-    $stdout.puts l_JSON.to_json
+    puts l_JSON.to_json
 
 end
 
