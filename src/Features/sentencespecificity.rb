@@ -52,13 +52,17 @@ ARGF.each do |l_JSN|
         
         l_Article["sentences"].each do |l_senid,l_sentence|
         
+            sentence_length = l_sentence.split(/ /).count
             score = 0.0    
+            
             doc_sen_id = l_Article["actual_doc_id"] + "_" + l_senid.to_s
             
             if $g_specificity_scores.key?(doc_sen_id) then
-                score = $g_specificity_scores[doc_sen_id]
+                score = $g_specificity_scores[doc_sen_id] 
             end
 
+            # score = score / sentence_length
+            
             sentence_count += 1
             sentence_specificity_total += score
             sentence_specificity_array.push(score)
@@ -69,45 +73,49 @@ ARGF.each do |l_JSN|
         
         sentence_specificity_mean = sentence_specificity_total / sentence_count
         sentence_specificity_array.sort!
-        sentence_specificity_bin_splitter = sentence_specificity_array[(sentence_count/2).floor]
+        sentence_specificity_median = sentence_specificity_array[(sentence_count/2).floor]
         
-        # STDERR.puts "list"
-        # STDERR.puts sentence_specificity_array
-        # STDERR.puts "mid"
-        # STDERR.puts sentence_specificity_bin_splitter
-
         l_Article["sentences"].each do |l_senid,l_sentence|
         
+            sentence_length = l_sentence.split(/ /).count
             score = 0.0    
+            
             doc_sen_id = l_Article["actual_doc_id"] + "_" + l_senid.to_s
             
             if $g_specificity_scores.key?(doc_sen_id) then
                 score = $g_specificity_scores[doc_sen_id]
             end
 
-            sentence_count += 1
-            sentence_specificity_total += score
+            # score = score / sentence_length
+            
+            # mean_normalised_score = (score - sentence_specificity_mean) / sentence_specificity_mean
+            mean_normalised_score = (score - sentence_specificity_mean) / sentence_specificity_mean / sentence_length
+            median_normalised_score = (score - sentence_specificity_median) / sentence_specificity_median
             
             ss_id = "#{l_Article["doc_id"]}_#{l_senid}"
             
-            $f_ssnorm[ss_id]=(score - sentence_specificity_mean) / sentence_specificity_mean
-            $f_ssbinhi[ss_id] = score >= sentence_specificity_bin_splitter ? 1 : 0
-            $f_ssbinlow[ss_id] = score >= sentence_specificity_bin_splitter ? 0 : 1
+            $f_ssnorm[ss_id] = mean_normalised_score
+            $f_ssnorm[ss_id] = $f_ssnorm[ss_id].abs
+            
+            STDERR.puts $f_ssnorm[ss_id].to_s + " : " + l_sentence
+            
+            $f_ssbinhi[ss_id] = score >= sentence_specificity_median ? mean_normalised_score : 0
+            $f_ssbinlow[ss_id] = score >= sentence_specificity_median ? 0 : mean_normalised_score
         end
         
     end
 
-    feature = { "ss" => $f_ss }
-    l_JSON["features"].push feature
+    # feature = { "ss" => $f_ss }
+    # l_JSON["features"].push feature
     
     feature = { "ssnorm" => $f_ssnorm }
     l_JSON["features"].push feature
 
-    feature = { "ssbinhi" => $f_ssbinhi }
-    l_JSON["features"].push feature
+    # feature = { "ssbinhi" => $f_ssbinhi }
+    # l_JSON["features"].push feature
     
-    feature = { "ssbinlow" => $f_ssbinlow }
-    l_JSON["features"].push feature
+    # feature = { "ssbinlow" => $f_ssbinlow }
+    # l_JSON["features"].push feature
     
     puts l_JSON.to_json()
 end

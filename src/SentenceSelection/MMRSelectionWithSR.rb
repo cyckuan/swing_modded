@@ -326,8 +326,8 @@ ARGF.each do |l_szJSON|
             #$stderr.puts "Retrieved #{l_MappedDocID}_#{l_MappedSenID}: [#{l_Score}]  #{l_CandidateSentence}"
 
             # sentence specificity score
-            sentence_specificity_score = $g_specificity_scores[l_JSON["splitted_sentences"][l_MappedDocID]["actual_doc_id"] + '_' + l_MappedSenID]
-            # sentence_specificity_score = 1
+            # sentence_specificity_score = $g_specificity_scores[l_JSON["splitted_sentences"][l_MappedDocID]["actual_doc_id"] + '_' + l_MappedSenID]
+            sentence_specificity_score = 1
             
             # Calculate MMR 
             l_MMR = sentence_specificity_score * WINGSummarisation::SentenceSelection.CalculateMMR(l_CandidateSentence, l_Score, l_Title, l_Narrative, -1, l_arrSelected, which_set, set_A_sents, sentence_specificity_score)

@@ -1,0 +1,65 @@
+
+BASELINE
+
+baseline - no sentence length no sentence specificity
+
+Z ROUGE-2 Average_R: 0.08754 (95%-conf.int. 0.07845 - 0.09617)
+Z ROUGE-2 Average_P: 0.11464 (95%-conf.int. 0.10291 - 0.12627)
+Z ROUGE-2 Average_F: 0.09926 (95%-conf.int. 0.08902 - 0.10916)
+
+baseline - with sentence length no sentence specificity
+
+Z ROUGE-2 Average_R: 0.08842 (95%-conf.int. 0.07986 - 0.09760)
+Z ROUGE-2 Average_P: 0.11551 (95%-conf.int. 0.10467 - 0.12731)
+Z ROUGE-2 Average_F: 0.10015 (95%-conf.int. 0.09061 - 0.11066)
+
+no sentence length
+sentence specificity as SVR feature
+MMR weighted by sentence specificity
+
+Z ROUGE-2 Average_R: 0.08685 (95%-conf.int. 0.07867 - 0.09567)
+Z ROUGE-2 Average_P: 0.11296 (95%-conf.int. 0.10260 - 0.12397)
+Z ROUGE-2 Average_F: 0.09819 (95%-conf.int. 0.08906 - 0.10790)
+
+no sentence length
+sentence specificity as SVR feature
+MMR not weighted
+
+Z ROUGE-2 Average_R: 0.08982 (95%-conf.int. 0.08136 - 0.09828)
+Z ROUGE-2 Average_P: 0.11733 (95%-conf.int. 0.10622 - 0.12836)
+Z ROUGE-2 Average_F: 0.10173 (95%-conf.int. 0.09219 - 0.11142)
+
+
+
+TOP PERFORMING - IMPROVEMENT
+
+motivation:
+1. low sentence specificity contains insufficient information, high sentence specificity does not reflect human summaries
+2. absolute normalised sentence specificity attempts to provide both a low and high cutoff
+3. sentence specificity distribution is skewed, therefore apply normalisation i.e. division by sentence length or word count
+
+no sentence length
+sentence specificity normalised by sentence length, as SVR feature
+MMR not weighted
+(bugged - accidentally divided by sentence_length^2)
+
+Z ROUGE-2 Average_R: 0.09186 (95%-conf.int. 0.08425 - 0.09994)
+Z ROUGE-2 Average_P: 0.12017 (95%-conf.int. 0.11036 - 0.13087)
+Z ROUGE-2 Average_F: 0.10412 (95%-conf.int. 0.09540 - 0.11334)
+
+no sentence length
+sentence specificity normalised by sentence length, as SVR feature
+MMR not weighted
+(fixed)
+
+
+
+DEGRADATION
+
+with sentence length as SVR feature
+with median-split low and high sentence specificity bins as features
+MMR not weighted
+
+Z ROUGE-2 Average_R: 0.08336 (95%-conf.int. 0.07565 - 0.09130)
+Z ROUGE-2 Average_P: 0.10874 (95%-conf.int. 0.09891 - 0.11887)
+Z ROUGE-2 Average_F: 0.09436 (95%-conf.int. 0.08571 - 0.10330)

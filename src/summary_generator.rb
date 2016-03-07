@@ -98,9 +98,8 @@ if __FILE__ == $0 then
     end
     
     STDERR.puts "iterations complete!"
-    STDERR.puts "commencing evaluations ..."
-    
-    `ruby -W0 eval.rb`
-    
-    STDERR.puts "evaluations complete!"
+
+    # STDERR.puts "commencing evaluations ..."
+    #     `ruby -W0 eval.rb`
+    # STDERR.puts "evaluations complete!"
 end
